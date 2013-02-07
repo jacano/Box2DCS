@@ -14,7 +14,7 @@ Steps to build:
 
 2. Generate cs files and .cxx file
 
-swig.exe -csharp -c++ -includeall -ignoremissing -namespace Box2DCS -outdir SWIG box2d.i
+  swig.exe -csharp -c++ -includeall -ignoremissing -namespace Box2DCS -outdir SWIG box2d.i
 
 3. Build Box2D.dll from VC++
 
