@@ -12,7 +12,22 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Box2DCSDemo", "Box2DCSDemo\
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Box2DSwig", "Box2DSwig\Box2DSwig.vcxproj", "{D7007353-EB3E-4F22-A23B-CFFE0B5D4AD0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Box2DCSAndroid", "Box2DCSAndroid\Box2DCSAndroid.csproj", "{4A875C2F-0B89-4C20-912B-68F628A375DC}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Box2DCS.Shared", "Box2DCS.Shared\Box2DCS.Shared.shproj", "{E5802288-DC40-40A7-B5CC-91382CEC1662}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Android", "Android", "{68D90F62-D8BB-4A54-9A84-996B86D27BC6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Desktop", "Desktop", "{F9552B17-B495-4EC9-8386-345078ED0412}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Box2DCSAndroidLib", "Box2DCSAndroidLib\Box2DCSAndroidLib.csproj", "{60299CF9-65A9-47D4-BE47-BF6E9535B623}"
+EndProject
 Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Box2DCS.Shared\Box2DCS.Shared.projitems*{e5802288-dc40-40a7-b5cc-91382cec1662}*SharedItemsImports = 13
+		Box2DCS.Shared\Box2DCS.Shared.projitems*{60299cf9-65a9-47d4-be47-bf6e9535b623}*SharedItemsImports = 4
+		Box2DCS.Shared\Box2DCS.Shared.projitems*{d050629f-77c1-43f4-b719-db75292d1a6c}*SharedItemsImports = 4
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Debug|Mixed Platforms = Debug|Mixed Platforms
@@ -52,8 +67,39 @@ Global
 		{D7007353-EB3E-4F22-A23B-CFFE0B5D4AD0}.Release|Mixed Platforms.Build.0 = Release|Win32
 		{D7007353-EB3E-4F22-A23B-CFFE0B5D4AD0}.Release|Win32.ActiveCfg = Release|Win32
 		{D7007353-EB3E-4F22-A23B-CFFE0B5D4AD0}.Release|Win32.Build.0 = Release|Win32
+		{4A875C2F-0B89-4C20-912B-68F628A375DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A875C2F-0B89-4C20-912B-68F628A375DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A875C2F-0B89-4C20-912B-68F628A375DC}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{4A875C2F-0B89-4C20-912B-68F628A375DC}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{4A875C2F-0B89-4C20-912B-68F628A375DC}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{4A875C2F-0B89-4C20-912B-68F628A375DC}.Debug|Mixed Platforms.Deploy.0 = Debug|Any CPU
+		{4A875C2F-0B89-4C20-912B-68F628A375DC}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{4A875C2F-0B89-4C20-912B-68F628A375DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A875C2F-0B89-4C20-912B-68F628A375DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A875C2F-0B89-4C20-912B-68F628A375DC}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{4A875C2F-0B89-4C20-912B-68F628A375DC}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{4A875C2F-0B89-4C20-912B-68F628A375DC}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{4A875C2F-0B89-4C20-912B-68F628A375DC}.Release|Mixed Platforms.Deploy.0 = Release|Any CPU
+		{4A875C2F-0B89-4C20-912B-68F628A375DC}.Release|Win32.ActiveCfg = Release|Any CPU
+		{60299CF9-65A9-47D4-BE47-BF6E9535B623}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60299CF9-65A9-47D4-BE47-BF6E9535B623}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60299CF9-65A9-47D4-BE47-BF6E9535B623}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{60299CF9-65A9-47D4-BE47-BF6E9535B623}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{60299CF9-65A9-47D4-BE47-BF6E9535B623}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{60299CF9-65A9-47D4-BE47-BF6E9535B623}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60299CF9-65A9-47D4-BE47-BF6E9535B623}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60299CF9-65A9-47D4-BE47-BF6E9535B623}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{60299CF9-65A9-47D4-BE47-BF6E9535B623}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{60299CF9-65A9-47D4-BE47-BF6E9535B623}.Release|Win32.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D050629F-77C1-43F4-B719-DB75292D1A6C} = {F9552B17-B495-4EC9-8386-345078ED0412}
+		{F03F5333-DCBB-4FE8-B997-980E048743B5} = {F9552B17-B495-4EC9-8386-345078ED0412}
+		{D7007353-EB3E-4F22-A23B-CFFE0B5D4AD0} = {F9552B17-B495-4EC9-8386-345078ED0412}
+		{4A875C2F-0B89-4C20-912B-68F628A375DC} = {68D90F62-D8BB-4A54-9A84-996B86D27BC6}
+		{60299CF9-65A9-47D4-BE47-BF6E9535B623} = {68D90F62-D8BB-4A54-9A84-996B86D27BC6}
 	EndGlobalSection
 EndGlobal

@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>e5802288-dc40-40a7-b5cc-91382cec1662</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Box2DCS</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)swig\b2AABB.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\b2BlockAllocator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\b2Body.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\b2BodyDef.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\b2BodyType.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\b2BroadPhase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\b2ChainShape.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\b2CircleShape.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\b2ClipVertex.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\b2Color.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\b2Contact.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\b2ContactEdge.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\b2ContactFeature.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\b2ContactFilter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\b2ContactID.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\b2ContactImpulse.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\b2ContactListener.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\b2ContactManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\b2ContactRegister.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\b2DestructionListener.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\b2DistanceInput.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\b2DistanceJoint.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\b2DistanceJointDef.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\b2DistanceOutput.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\b2DistanceProxy.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\b2Draw.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\b2DynamicTree.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\b2EdgeShape.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\b2Filter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\b2Fixture.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\b2FixtureDef.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\b2FixtureProxy.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\b2FrictionJoint.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\b2FrictionJointDef.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\b2GearJoint.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\b2GearJointDef.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\b2Jacobian.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\b2Joint.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\b2JointDef.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\b2JointEdge.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\b2JointType.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\b2LimitState.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\b2Manifold.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\b2ManifoldPoint.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\b2MassData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\b2Mat22.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\b2Mat33.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\b2MouseJoint.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\b2MouseJointDef.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\b2Pair.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\b2PointState.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\b2PolygonShape.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\b2Position.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\b2PrismaticJoint.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\b2PrismaticJointDef.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\b2Profile.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\b2PulleyJoint.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\b2PulleyJointDef.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\b2QueryCallback.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\b2RayCastCallback.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\b2RayCastInput.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\b2RayCastOutput.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\b2RevoluteJoint.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\b2RevoluteJointDef.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\b2RopeJoint.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\b2RopeJointDef.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\b2Rot.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\b2Shape.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\b2SimplexCache.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\b2SolverData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\b2StackAllocator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\b2StackEntry.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\b2Sweep.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\b2Timer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\b2TimeStep.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\b2TOIInput.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\b2TOIOutput.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\b2Transform.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\b2TreeNode.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\b2Vec2.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\b2Vec3.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\b2Velocity.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\b2Version.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\b2WeldJoint.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\b2WeldJointDef.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\b2WheelJoint.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\b2WheelJointDef.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\b2World.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\b2WorldManifold.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\Box2D.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\Box2DPINVOKE.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\SWIGTYPE_p_b2PointState.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\SWIGTYPE_p_float.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\SWIGTYPE_p_f_p_b2Contact_p_b2BlockAllocator__void.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\SWIGTYPE_p_f_p_b2Fixture_int32_p_b2Fixture_int32_p_b2BlockAllocator__p_b2Contact.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\SWIGTYPE_p_unsigned_char.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)swig\SWIGTYPE_p_void.cs" />
+  </ItemGroup>
+</Project>
