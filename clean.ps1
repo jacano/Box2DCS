@@ -1,5 +1,5 @@
 # Define files and directories to delete
-$include = @("*.suo","*.user","*.cache","*.docstates","bin","obj","build")
+$include = @("*.suo","*.user","*.cache","*.docstates","bin","obj","build","Debug","Release")
 
 # Define files and directories to exclude
 $exclude = @()
