@@ -46,9 +46,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedNativeLibrary Include="libs\armeabi-v7a\libbox2dshared.so" />
-    <EmbeddedNativeLibrary Include="libs\armeabi\libbox2dshared.so" />
-    <EmbeddedNativeLibrary Include="libs\x86\libbox2dshared.so" />
+    <EmbeddedNativeLibrary Include="libs\armeabi-v7a\libBox2D.so" />
+    <EmbeddedNativeLibrary Include="libs\armeabi\libBox2D.so" />
+    <EmbeddedNativeLibrary Include="libs\x86\libBox2D.so" />
     <None Include="Resources\AboutResources.txt" />
   </ItemGroup>
   <ItemGroup>
