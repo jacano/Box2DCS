@@ -53,6 +53,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <AndroidNativeLibrary Include="libs\armeabi\libBox2D.so" />
+    <AndroidNativeLibrary Include="libs\armeabi-v7a\libBox2D.so" />
+    <AndroidNativeLibrary Include="libs\x86\libBox2D.so" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
   </ItemGroup>
@@ -68,12 +71,7 @@
   <ItemGroup>
     <Content Include="Properties\AndroidManifest.xml" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Box2DCSAndroidLib\Box2DCSAndroidLib.csproj">
-      <Project>{60299cf9-65a9-47d4-be47-bf6e9535b623}</Project>
-      <Name>Box2DCSAndroidLib</Name>
-    </ProjectReference>
-  </ItemGroup>
+  <Import Project="..\Box2DCS.Shared\Box2DCS.Shared.projitems" Label="Shared" Condition="Exists('..\Box2DCS.Shared\Box2DCS.Shared.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
      Other similar extension points exist, see Microsoft.Common.targets.

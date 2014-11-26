@@ -44,12 +44,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Box2DCS\Box2DCS.csproj">
-      <Project>{d050629f-77c1-43f4-b719-db75292d1a6c}</Project>
-      <Name>Box2DCS</Name>
-    </ProjectReference>
-  </ItemGroup>
+  <Import Project="..\Box2DCS.Shared\Box2DCS.Shared.projitems" Label="Shared" Condition="Exists('..\Box2DCS.Shared\Box2DCS.Shared.projitems')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
