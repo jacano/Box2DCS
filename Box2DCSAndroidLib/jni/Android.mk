@@ -1,6 +1,8 @@
 LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
 
+SOURCE_BUFFER	:= $(wildcard $(LOCAL_PATH)/*.cpp)
+SWIGBOX2D_SRC	:= $(subst jni/, , $(SOURCE_BUFFER))
 SOURCE_BUFFER	:= $(wildcard $(LOCAL_PATH)/Box2D/*.cpp)
 BOX2D_SRC		:= $(subst jni/, , $(SOURCE_BUFFER))
 SOURCE_BUFFER	:= $(wildcard $(LOCAL_PATH)/Box2D/Collision/*.cpp)
@@ -22,7 +24,7 @@ ROPE_SRC		:= $(subst jni/, , $(SOURCE_BUFFER))
 LOCAL_MODULE		:= Box2D
 LOCAL_LDLIBS		:= -lstdc++ -lm -landroid
 
-LOCAL_C_INCLUDES		:=	$(LOCAL_PATH)Box2D \
+LOCAL_C_INCLUDES	:=	$(LOCAL_PATH)Box2D \
 					$(LOCAL_PATH)Box2D/Collision \
 					$(LOCAL_PATH)Box2D/Collision/Shapes \
 					$(LOCAL_PATH)Box2D/Common \
@@ -31,13 +33,14 @@ LOCAL_C_INCLUDES		:=	$(LOCAL_PATH)Box2D \
 					$(LOCAL_PATH)Box2D/Dynamics/Joints \
 					$(LOCAL_PATH)Box2D/Rope
 					
-LOCAL_SRC_FILES			  :=	$(BOX2D_SRC) \
+LOCAL_SRC_FILES		:=	$(BOX2D_SRC) \
 					$(COLLISION_SRC) \
 					$(SHAPES_SRC) \
 					$(COMMON_SRC) \
 					$(DYNAMICS_SRC) \
 					$(CONTACTS_SRC) \
 					$(JOINTS_SRC) \
-					$(ROPE_SRC)
+					$(ROPE_SRC) \
+					$(SWIGBOX2D_SRC)
 					
 include $(BUILD_SHARED_LIBRARY)
