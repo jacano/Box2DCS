@@ -23,9 +23,10 @@
     <MtouchLink>None</MtouchLink>
     <MtouchDebug>True</MtouchDebug>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
-    <MtouchSdkVersion>7.1</MtouchSdkVersion>
+    <MtouchSdkVersion>
+    </MtouchSdkVersion>
     <MtouchProfiling>False</MtouchProfiling>
-    <MtouchExtraArgs>--registrar:legacy -gcc_flags "-L%24{ProjectDir} -lBox2D -force_load %24{ProjectDir}/libBox2D.a"</MtouchExtraArgs>
+    <MtouchExtraArgs>-gcc_flags "-L%24{ProjectDir} -lBox2D -force_load %24{ProjectDir}/libBox2D.a"</MtouchExtraArgs>
     <MtouchFastDev>False</MtouchFastDev>
     <MtouchEnableGenericValueTypeSharing>True</MtouchEnableGenericValueTypeSharing>
     <MtouchUseLlvm>False</MtouchUseLlvm>
