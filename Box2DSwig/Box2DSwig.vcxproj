@@ -23,7 +23,7 @@
     <UseDebugLibraries>true</UseDebugLibraries>
     <CharacterSet>MultiByte</CharacterSet>
     <PlatformToolset>v120</PlatformToolset>
-    <OutputPath>.\</OutputPath>
+    <OutputPath>.</OutputPath>
     <LinkIncremental>true</LinkIncremental>
     <TargetName>Box2D</TargetName>
     <OutDir>$(SolutionDir)bin\$(Configuration)\</OutDir>
@@ -34,7 +34,7 @@
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
     <PlatformToolset>v120</PlatformToolset>
-    <OutputPath>.\</OutputPath>
+    <OutputPath>.</OutputPath>
     <LinkIncremental>false</LinkIncremental>
     <TargetName>Box2D</TargetName>
     <OutDir>$(SolutionDir)bin\$(Configuration)\</OutDir>

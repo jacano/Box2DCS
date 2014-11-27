@@ -5,6 +5,9 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
+using ObjCRuntime;
+
+
 [assembly: AssemblyTitle("Box2DCSiOS")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
@@ -34,3 +37,5 @@ using System.Runtime.InteropServices;
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
+
+[assembly: LinkWith ("libBox2D.a", LinkTarget.Simulator, ForceLoad = true, IsCxx = true, Frameworks="AVFoundation CoreGraphics CoreMotion CoreVideo Security CoreMedia OpenGLES SystemConfiguration QuartzCore")]
