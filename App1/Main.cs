@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 
-using Foundation;
-using UIKit;
+using MonoTouch.Foundation;
+using MonoTouch.UIKit;
 
-namespace Box2DCSiOS
+namespace App1
 {
     public class Application
     {

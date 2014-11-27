@@ -5,14 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-using ObjCRuntime;
-
-
-[assembly: AssemblyTitle("Box2DCSiOS")]
+[assembly: AssemblyTitle("App1")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Box2DCSiOS")]
+[assembly: AssemblyProduct("App1")]
 [assembly: AssemblyCopyright("Copyright ©  2014")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -23,7 +20,7 @@ using ObjCRuntime;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("fe8a9dce-f501-43d1-acc2-7aeb75c68e05")]
+[assembly: Guid("fc7676df-0f7d-4885-ae04-b8db6703e6bf")]
 
 // Version information for an assembly consists of the following four values:
 //
@@ -37,5 +34,3 @@ using ObjCRuntime;
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
-
-[assembly: LinkWith ("libBox2D.a", LinkTarget.Simulator, ForceLoad = true, IsCxx = true, Frameworks="AVFoundation CoreGraphics CoreMotion CoreVideo Security CoreMedia OpenGLES SystemConfiguration QuartzCore")]

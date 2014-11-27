@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Box2DCS;
-using Foundation;
-using UIKit;
 
-namespace Box2DCSiOS
+using MonoTouch.Foundation;
+using MonoTouch.UIKit;
+using Box2DCS;
+
+namespace App1
 {
     // The UIApplicationDelegate for the application. This class is responsible for launching the 
     // User Interface of the application, as well as listening (and optionally responding) to 
