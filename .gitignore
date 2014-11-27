@@ -111,3 +111,5 @@ UpgradeLog*.XML
 
 .sync
 xcuserdata
+.DS_Store
+xcshareddata
