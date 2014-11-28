@@ -7,8 +7,8 @@
     <ProjectGuid>{82A3E947-07D2-4333-B612-70BC2969D34D}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Box2DDesktop</RootNamespace>
-    <AssemblyName>Box2DDesktop</AssemblyName>
+    <RootNamespace>Box2DCSDesktop</RootNamespace>
+    <AssemblyName>Box2DCSDesktop</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

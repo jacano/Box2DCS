@@ -6,9 +6,9 @@
     <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <ProjectGuid>{8ADC5CCD-A0D8-4453-821B-14BDCE1017D3}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>bindingsios</RootNamespace>
+    <RootNamespace>Box2DCSiOS</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <AssemblyName>bindingsios</AssemblyName>
+    <AssemblyName>Box2DCSiOS</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
     <DebugSymbols>true</DebugSymbols>
