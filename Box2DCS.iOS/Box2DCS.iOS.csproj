@@ -95,9 +95,15 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Ad-Hoc|iPhoneSimulator'">
     <DefineConstants>__MOBILE__;__IOS__;IOS</DefineConstants>
+    <OutputPath>bin\Ad-Hoc</OutputPath>
+    <WarningLevel>4</WarningLevel>
+    <Optimize>false</Optimize>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'AppStore|iPhoneSimulator'">
     <DefineConstants>__MOBILE__;__IOS__;IOS</DefineConstants>
+    <OutputPath>bin\AppStore</OutputPath>
+    <WarningLevel>4</WarningLevel>
+    <Optimize>false</Optimize>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />

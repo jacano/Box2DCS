@@ -2902,7 +2902,7 @@ class Box2DPINVOKE
   [DllImport(DllName, EntryPoint="CSharp_delete_b2WheelJointDef")]
   public static extern void delete_b2WheelJointDef(HandleRef jarg1);
 
-  [DllImport(DllName, EntryPoint="CSharp_b2WheelJoint_GetDefinition")]
+  //[DllImport(DllName, EntryPoint="CSharp_b2WheelJoint_GetDefinition")]
   public static extern void b2WheelJoint_GetDefinition(HandleRef jarg1, HandleRef jarg2);
 
   [DllImport(DllName, EntryPoint="CSharp_b2WheelJoint_GetAnchorA")]
