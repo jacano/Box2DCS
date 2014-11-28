@@ -53,16 +53,6 @@
 # endif
 #endif
 
-/* internal SWIG method */
-#ifndef SWIGINTERN
-# define SWIGINTERN static SWIGUNUSED
-#endif
-
-/* internal inline SWIG method */
-#ifndef SWIGINTERNINLINE
-# define SWIGINTERNINLINE SWIGINTERN SWIGINLINE
-#endif
-
 /* exporting methods */
 #if (__GNUC__ >= 4) || (__GNUC__ == 3 && __GNUC_MINOR__ >= 4)
 #  ifndef GCC_HASCLASSVISIBILITY
@@ -791,12 +781,12 @@ SWIGEXPORT void * SWIGSTDCALL CSharp_new_b2Mat22__SWIG_1(void * jarg1, void * ja
   
   arg1 = (b2Vec2 *)jarg1;
   if (!arg1) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec2 const & type is null", 0);
+    
     return 0;
   } 
   arg2 = (b2Vec2 *)jarg2;
   if (!arg2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec2 const & type is null", 0);
+    
     return 0;
   } 
   result = (b2Mat22 *)new b2Mat22((b2Vec2 const &)*arg1,(b2Vec2 const &)*arg2);
@@ -831,12 +821,12 @@ SWIGEXPORT void SWIGSTDCALL CSharp_b2Mat22_Set(void * jarg1, void * jarg2, void 
   arg1 = (b2Mat22 *)jarg1; 
   arg2 = (b2Vec2 *)jarg2;
   if (!arg2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec2 const & type is null", 0);
+    
     return ;
   } 
   arg3 = (b2Vec2 *)jarg3;
   if (!arg3) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec2 const & type is null", 0);
+    
     return ;
   } 
   (arg1)->Set((b2Vec2 const &)*arg2,(b2Vec2 const &)*arg3);
@@ -880,7 +870,7 @@ SWIGEXPORT void * SWIGSTDCALL CSharp_b2Mat22_Solve(void * jarg1, void * jarg2) {
   arg1 = (b2Mat22 *)jarg1; 
   arg2 = (b2Vec2 *)jarg2;
   if (!arg2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec2 const & type is null", 0);
+    
     return 0;
   } 
   result = ((b2Mat22 const *)arg1)->Solve((b2Vec2 const &)*arg2);
@@ -960,17 +950,17 @@ SWIGEXPORT void * SWIGSTDCALL CSharp_new_b2Mat33__SWIG_1(void * jarg1, void * ja
   
   arg1 = (b2Vec3 *)jarg1;
   if (!arg1) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec3 const & type is null", 0);
+    
     return 0;
   } 
   arg2 = (b2Vec3 *)jarg2;
   if (!arg2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec3 const & type is null", 0);
+    
     return 0;
   } 
   arg3 = (b2Vec3 *)jarg3;
   if (!arg3) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec3 const & type is null", 0);
+    
     return 0;
   } 
   result = (b2Mat33 *)new b2Mat33((b2Vec3 const &)*arg1,(b2Vec3 const &)*arg2,(b2Vec3 const &)*arg3);
@@ -996,7 +986,7 @@ SWIGEXPORT void * SWIGSTDCALL CSharp_b2Mat33_Solve33(void * jarg1, void * jarg2)
   arg1 = (b2Mat33 *)jarg1; 
   arg2 = (b2Vec3 *)jarg2;
   if (!arg2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec3 const & type is null", 0);
+    
     return 0;
   } 
   result = ((b2Mat33 const *)arg1)->Solve33((b2Vec3 const &)*arg2);
@@ -1014,7 +1004,7 @@ SWIGEXPORT void * SWIGSTDCALL CSharp_b2Mat33_Solve22(void * jarg1, void * jarg2)
   arg1 = (b2Mat33 *)jarg1; 
   arg2 = (b2Vec2 *)jarg2;
   if (!arg2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec2 const & type is null", 0);
+    
     return 0;
   } 
   result = ((b2Mat33 const *)arg1)->Solve22((b2Vec2 const &)*arg2);
@@ -1263,12 +1253,12 @@ SWIGEXPORT void * SWIGSTDCALL CSharp_new_b2Transform__SWIG_1(void * jarg1, void 
   
   arg1 = (b2Vec2 *)jarg1;
   if (!arg1) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec2 const & type is null", 0);
+    
     return 0;
   } 
   arg2 = (b2Rot *)jarg2;
   if (!arg2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Rot const & type is null", 0);
+    
     return 0;
   } 
   result = (b2Transform *)new b2Transform((b2Vec2 const &)*arg1,(b2Rot const &)*arg2);
@@ -1293,7 +1283,7 @@ SWIGEXPORT void SWIGSTDCALL CSharp_b2Transform_Set(void * jarg1, void * jarg2, f
   arg1 = (b2Transform *)jarg1; 
   arg2 = (b2Vec2 *)jarg2;
   if (!arg2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec2 const & type is null", 0);
+    
     return ;
   } 
   arg3 = (float32)jarg3; 
@@ -1551,12 +1541,12 @@ SWIGEXPORT float SWIGSTDCALL CSharp_b2Dot__SWIG_0(void * jarg1, void * jarg2) {
   
   arg1 = (b2Vec2 *)jarg1;
   if (!arg1) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec2 const & type is null", 0);
+    
     return 0;
   } 
   arg2 = (b2Vec2 *)jarg2;
   if (!arg2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec2 const & type is null", 0);
+    
     return 0;
   } 
   result = (float32)b2Dot((b2Vec2 const &)*arg1,(b2Vec2 const &)*arg2);
@@ -1573,12 +1563,12 @@ SWIGEXPORT float SWIGSTDCALL CSharp_b2Cross__SWIG_0(void * jarg1, void * jarg2) 
   
   arg1 = (b2Vec2 *)jarg1;
   if (!arg1) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec2 const & type is null", 0);
+    
     return 0;
   } 
   arg2 = (b2Vec2 *)jarg2;
   if (!arg2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec2 const & type is null", 0);
+    
     return 0;
   } 
   result = (float32)b2Cross((b2Vec2 const &)*arg1,(b2Vec2 const &)*arg2);
@@ -1595,7 +1585,7 @@ SWIGEXPORT void * SWIGSTDCALL CSharp_b2Cross__SWIG_1(void * jarg1, float jarg2) 
   
   arg1 = (b2Vec2 *)jarg1;
   if (!arg1) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec2 const & type is null", 0);
+    
     return 0;
   } 
   arg2 = (float32)jarg2; 
@@ -1614,7 +1604,7 @@ SWIGEXPORT void * SWIGSTDCALL CSharp_b2Cross__SWIG_2(float jarg1, void * jarg2) 
   arg1 = (float32)jarg1; 
   arg2 = (b2Vec2 *)jarg2;
   if (!arg2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec2 const & type is null", 0);
+    
     return 0;
   } 
   result = b2Cross(arg1,(b2Vec2 const &)*arg2);
@@ -1631,12 +1621,12 @@ SWIGEXPORT void * SWIGSTDCALL CSharp_b2Mul__SWIG_0(void * jarg1, void * jarg2) {
   
   arg1 = (b2Mat22 *)jarg1;
   if (!arg1) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Mat22 const & type is null", 0);
+    
     return 0;
   } 
   arg2 = (b2Vec2 *)jarg2;
   if (!arg2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec2 const & type is null", 0);
+    
     return 0;
   } 
   result = b2Mul((b2Mat22 const &)*arg1,(b2Vec2 const &)*arg2);
@@ -1653,12 +1643,12 @@ SWIGEXPORT void * SWIGSTDCALL CSharp_b2MulT__SWIG_0(void * jarg1, void * jarg2) 
   
   arg1 = (b2Mat22 *)jarg1;
   if (!arg1) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Mat22 const & type is null", 0);
+    
     return 0;
   } 
   arg2 = (b2Vec2 *)jarg2;
   if (!arg2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec2 const & type is null", 0);
+    
     return 0;
   } 
   result = b2MulT((b2Mat22 const &)*arg1,(b2Vec2 const &)*arg2);
@@ -1675,12 +1665,12 @@ SWIGEXPORT float SWIGSTDCALL CSharp_b2Distance__SWIG_0(void * jarg1, void * jarg
   
   arg1 = (b2Vec2 *)jarg1;
   if (!arg1) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec2 const & type is null", 0);
+    
     return 0;
   } 
   arg2 = (b2Vec2 *)jarg2;
   if (!arg2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec2 const & type is null", 0);
+    
     return 0;
   } 
   result = (float32)b2Distance((b2Vec2 const &)*arg1,(b2Vec2 const &)*arg2);
@@ -1697,12 +1687,12 @@ SWIGEXPORT float SWIGSTDCALL CSharp_b2DistanceSquared(void * jarg1, void * jarg2
   
   arg1 = (b2Vec2 *)jarg1;
   if (!arg1) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec2 const & type is null", 0);
+    
     return 0;
   } 
   arg2 = (b2Vec2 *)jarg2;
   if (!arg2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec2 const & type is null", 0);
+    
     return 0;
   } 
   result = (float32)b2DistanceSquared((b2Vec2 const &)*arg1,(b2Vec2 const &)*arg2);
@@ -1719,12 +1709,12 @@ SWIGEXPORT float SWIGSTDCALL CSharp_b2Dot__SWIG_1(void * jarg1, void * jarg2) {
   
   arg1 = (b2Vec3 *)jarg1;
   if (!arg1) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec3 const & type is null", 0);
+    
     return 0;
   } 
   arg2 = (b2Vec3 *)jarg2;
   if (!arg2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec3 const & type is null", 0);
+    
     return 0;
   } 
   result = (float32)b2Dot((b2Vec3 const &)*arg1,(b2Vec3 const &)*arg2);
@@ -1741,12 +1731,12 @@ SWIGEXPORT void * SWIGSTDCALL CSharp_b2Cross__SWIG_3(void * jarg1, void * jarg2)
   
   arg1 = (b2Vec3 *)jarg1;
   if (!arg1) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec3 const & type is null", 0);
+    
     return 0;
   } 
   arg2 = (b2Vec3 *)jarg2;
   if (!arg2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec3 const & type is null", 0);
+    
     return 0;
   } 
   result = b2Cross((b2Vec3 const &)*arg1,(b2Vec3 const &)*arg2);
@@ -1763,12 +1753,12 @@ SWIGEXPORT void * SWIGSTDCALL CSharp_b2Mul__SWIG_1(void * jarg1, void * jarg2) {
   
   arg1 = (b2Mat22 *)jarg1;
   if (!arg1) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Mat22 const & type is null", 0);
+    
     return 0;
   } 
   arg2 = (b2Mat22 *)jarg2;
   if (!arg2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Mat22 const & type is null", 0);
+    
     return 0;
   } 
   result = b2Mul((b2Mat22 const &)*arg1,(b2Mat22 const &)*arg2);
@@ -1785,12 +1775,12 @@ SWIGEXPORT void * SWIGSTDCALL CSharp_b2MulT__SWIG_1(void * jarg1, void * jarg2) 
   
   arg1 = (b2Mat22 *)jarg1;
   if (!arg1) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Mat22 const & type is null", 0);
+    
     return 0;
   } 
   arg2 = (b2Mat22 *)jarg2;
   if (!arg2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Mat22 const & type is null", 0);
+    
     return 0;
   } 
   result = b2MulT((b2Mat22 const &)*arg1,(b2Mat22 const &)*arg2);
@@ -1807,12 +1797,12 @@ SWIGEXPORT void * SWIGSTDCALL CSharp_b2Mul__SWIG_2(void * jarg1, void * jarg2) {
   
   arg1 = (b2Mat33 *)jarg1;
   if (!arg1) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Mat33 const & type is null", 0);
+    
     return 0;
   } 
   arg2 = (b2Vec3 *)jarg2;
   if (!arg2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec3 const & type is null", 0);
+    
     return 0;
   } 
   result = b2Mul((b2Mat33 const &)*arg1,(b2Vec3 const &)*arg2);
@@ -1829,12 +1819,12 @@ SWIGEXPORT void * SWIGSTDCALL CSharp_b2Mul22(void * jarg1, void * jarg2) {
   
   arg1 = (b2Mat33 *)jarg1;
   if (!arg1) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Mat33 const & type is null", 0);
+    
     return 0;
   } 
   arg2 = (b2Vec2 *)jarg2;
   if (!arg2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec2 const & type is null", 0);
+    
     return 0;
   } 
   result = b2Mul22((b2Mat33 const &)*arg1,(b2Vec2 const &)*arg2);
@@ -1851,12 +1841,12 @@ SWIGEXPORT void * SWIGSTDCALL CSharp_b2Mul__SWIG_3(void * jarg1, void * jarg2) {
   
   arg1 = (b2Rot *)jarg1;
   if (!arg1) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Rot const & type is null", 0);
+    
     return 0;
   } 
   arg2 = (b2Rot *)jarg2;
   if (!arg2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Rot const & type is null", 0);
+    
     return 0;
   } 
   result = b2Mul((b2Rot const &)*arg1,(b2Rot const &)*arg2);
@@ -1873,12 +1863,12 @@ SWIGEXPORT void * SWIGSTDCALL CSharp_b2MulT__SWIG_2(void * jarg1, void * jarg2) 
   
   arg1 = (b2Rot *)jarg1;
   if (!arg1) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Rot const & type is null", 0);
+    
     return 0;
   } 
   arg2 = (b2Rot *)jarg2;
   if (!arg2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Rot const & type is null", 0);
+    
     return 0;
   } 
   result = b2MulT((b2Rot const &)*arg1,(b2Rot const &)*arg2);
@@ -1895,12 +1885,12 @@ SWIGEXPORT void * SWIGSTDCALL CSharp_b2Mul__SWIG_4(void * jarg1, void * jarg2) {
   
   arg1 = (b2Rot *)jarg1;
   if (!arg1) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Rot const & type is null", 0);
+    
     return 0;
   } 
   arg2 = (b2Vec2 *)jarg2;
   if (!arg2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec2 const & type is null", 0);
+    
     return 0;
   } 
   result = b2Mul((b2Rot const &)*arg1,(b2Vec2 const &)*arg2);
@@ -1917,12 +1907,12 @@ SWIGEXPORT void * SWIGSTDCALL CSharp_b2MulT__SWIG_3(void * jarg1, void * jarg2) 
   
   arg1 = (b2Rot *)jarg1;
   if (!arg1) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Rot const & type is null", 0);
+    
     return 0;
   } 
   arg2 = (b2Vec2 *)jarg2;
   if (!arg2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec2 const & type is null", 0);
+    
     return 0;
   } 
   result = b2MulT((b2Rot const &)*arg1,(b2Vec2 const &)*arg2);
@@ -1939,12 +1929,12 @@ SWIGEXPORT void * SWIGSTDCALL CSharp_b2Mul__SWIG_5(void * jarg1, void * jarg2) {
   
   arg1 = (b2Transform *)jarg1;
   if (!arg1) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Transform const & type is null", 0);
+    
     return 0;
   } 
   arg2 = (b2Vec2 *)jarg2;
   if (!arg2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec2 const & type is null", 0);
+    
     return 0;
   } 
   result = b2Mul((b2Transform const &)*arg1,(b2Vec2 const &)*arg2);
@@ -1961,12 +1951,12 @@ SWIGEXPORT void * SWIGSTDCALL CSharp_b2MulT__SWIG_4(void * jarg1, void * jarg2) 
   
   arg1 = (b2Transform *)jarg1;
   if (!arg1) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Transform const & type is null", 0);
+    
     return 0;
   } 
   arg2 = (b2Vec2 *)jarg2;
   if (!arg2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec2 const & type is null", 0);
+    
     return 0;
   } 
   result = b2MulT((b2Transform const &)*arg1,(b2Vec2 const &)*arg2);
@@ -1983,12 +1973,12 @@ SWIGEXPORT void * SWIGSTDCALL CSharp_b2Mul__SWIG_6(void * jarg1, void * jarg2) {
   
   arg1 = (b2Transform *)jarg1;
   if (!arg1) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Transform const & type is null", 0);
+    
     return 0;
   } 
   arg2 = (b2Transform *)jarg2;
   if (!arg2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Transform const & type is null", 0);
+    
     return 0;
   } 
   result = b2Mul((b2Transform const &)*arg1,(b2Transform const &)*arg2);
@@ -2005,12 +1995,12 @@ SWIGEXPORT void * SWIGSTDCALL CSharp_b2MulT__SWIG_5(void * jarg1, void * jarg2) 
   
   arg1 = (b2Transform *)jarg1;
   if (!arg1) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Transform const & type is null", 0);
+    
     return 0;
   } 
   arg2 = (b2Transform *)jarg2;
   if (!arg2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Transform const & type is null", 0);
+    
     return 0;
   } 
   result = b2MulT((b2Transform const &)*arg1,(b2Transform const &)*arg2);
@@ -2026,7 +2016,7 @@ SWIGEXPORT void * SWIGSTDCALL CSharp_b2Abs__SWIG_1(void * jarg1) {
   
   arg1 = (b2Vec2 *)jarg1;
   if (!arg1) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec2 const & type is null", 0);
+    
     return 0;
   } 
   result = b2Abs((b2Vec2 const &)*arg1);
@@ -2042,7 +2032,7 @@ SWIGEXPORT void * SWIGSTDCALL CSharp_b2Abs__SWIG_2(void * jarg1) {
   
   arg1 = (b2Mat22 *)jarg1;
   if (!arg1) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Mat22 const & type is null", 0);
+    
     return 0;
   } 
   result = b2Abs((b2Mat22 const &)*arg1);
@@ -2059,12 +2049,12 @@ SWIGEXPORT void * SWIGSTDCALL CSharp_b2Min(void * jarg1, void * jarg2) {
   
   arg1 = (b2Vec2 *)jarg1;
   if (!arg1) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec2 const & type is null", 0);
+    
     return 0;
   } 
   arg2 = (b2Vec2 *)jarg2;
   if (!arg2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec2 const & type is null", 0);
+    
     return 0;
   } 
   result = b2Min((b2Vec2 const &)*arg1,(b2Vec2 const &)*arg2);
@@ -2081,12 +2071,12 @@ SWIGEXPORT void * SWIGSTDCALL CSharp_b2Max(void * jarg1, void * jarg2) {
   
   arg1 = (b2Vec2 *)jarg1;
   if (!arg1) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec2 const & type is null", 0);
+    
     return 0;
   } 
   arg2 = (b2Vec2 *)jarg2;
   if (!arg2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec2 const & type is null", 0);
+    
     return 0;
   } 
   result = b2Max((b2Vec2 const &)*arg1,(b2Vec2 const &)*arg2);
@@ -2104,17 +2094,17 @@ SWIGEXPORT void * SWIGSTDCALL CSharp_b2Clamp(void * jarg1, void * jarg2, void * 
   
   arg1 = (b2Vec2 *)jarg1;
   if (!arg1) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec2 const & type is null", 0);
+    
     return 0;
   } 
   arg2 = (b2Vec2 *)jarg2;
   if (!arg2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec2 const & type is null", 0);
+    
     return 0;
   } 
   arg3 = (b2Vec2 *)jarg3;
   if (!arg3) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec2 const & type is null", 0);
+    
     return 0;
   } 
   result = b2Clamp((b2Vec2 const &)*arg1,(b2Vec2 const &)*arg2,(b2Vec2 const &)*arg3);
@@ -2372,7 +2362,7 @@ SWIGEXPORT void SWIGSTDCALL CSharp_b2Draw_DrawPolygon(void * jarg1, void * jarg2
   arg3 = (int32)jarg3; 
   arg4 = (b2Color *)jarg4;
   if (!arg4) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Color const & type is null", 0);
+    
     return ;
   } 
   (arg1)->DrawPolygon((b2Vec2 const *)arg2,arg3,(b2Color const &)*arg4);
@@ -2390,7 +2380,7 @@ SWIGEXPORT void SWIGSTDCALL CSharp_b2Draw_DrawSolidPolygon(void * jarg1, void * 
   arg3 = (int32)jarg3; 
   arg4 = (b2Color *)jarg4;
   if (!arg4) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Color const & type is null", 0);
+    
     return ;
   } 
   (arg1)->DrawSolidPolygon((b2Vec2 const *)arg2,arg3,(b2Color const &)*arg4);
@@ -2406,13 +2396,13 @@ SWIGEXPORT void SWIGSTDCALL CSharp_b2Draw_DrawCircle(void * jarg1, void * jarg2,
   arg1 = (b2Draw *)jarg1; 
   arg2 = (b2Vec2 *)jarg2;
   if (!arg2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec2 const & type is null", 0);
+    
     return ;
   } 
   arg3 = (float32)jarg3; 
   arg4 = (b2Color *)jarg4;
   if (!arg4) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Color const & type is null", 0);
+    
     return ;
   } 
   (arg1)->DrawCircle((b2Vec2 const &)*arg2,arg3,(b2Color const &)*arg4);
@@ -2429,18 +2419,18 @@ SWIGEXPORT void SWIGSTDCALL CSharp_b2Draw_DrawSolidCircle(void * jarg1, void * j
   arg1 = (b2Draw *)jarg1; 
   arg2 = (b2Vec2 *)jarg2;
   if (!arg2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec2 const & type is null", 0);
+    
     return ;
   } 
   arg3 = (float32)jarg3; 
   arg4 = (b2Vec2 *)jarg4;
   if (!arg4) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec2 const & type is null", 0);
+    
     return ;
   } 
   arg5 = (b2Color *)jarg5;
   if (!arg5) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Color const & type is null", 0);
+    
     return ;
   } 
   (arg1)->DrawSolidCircle((b2Vec2 const &)*arg2,arg3,(b2Vec2 const &)*arg4,(b2Color const &)*arg5);
@@ -2456,17 +2446,17 @@ SWIGEXPORT void SWIGSTDCALL CSharp_b2Draw_DrawSegment(void * jarg1, void * jarg2
   arg1 = (b2Draw *)jarg1; 
   arg2 = (b2Vec2 *)jarg2;
   if (!arg2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec2 const & type is null", 0);
+    
     return ;
   } 
   arg3 = (b2Vec2 *)jarg3;
   if (!arg3) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec2 const & type is null", 0);
+    
     return ;
   } 
   arg4 = (b2Color *)jarg4;
   if (!arg4) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Color const & type is null", 0);
+    
     return ;
   } 
   (arg1)->DrawSegment((b2Vec2 const &)*arg2,(b2Vec2 const &)*arg3,(b2Color const &)*arg4);
@@ -2480,7 +2470,7 @@ SWIGEXPORT void SWIGSTDCALL CSharp_b2Draw_DrawTransform(void * jarg1, void * jar
   arg1 = (b2Draw *)jarg1; 
   arg2 = (b2Transform *)jarg2;
   if (!arg2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Transform const & type is null", 0);
+    
     return ;
   } 
   (arg1)->DrawTransform((b2Transform const &)*arg2);
@@ -3045,13 +3035,13 @@ SWIGEXPORT void SWIGSTDCALL CSharp_b2WorldManifold_Initialize(void * jarg1, void
   arg2 = (b2Manifold *)jarg2; 
   arg3 = (b2Transform *)jarg3;
   if (!arg3) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Transform const & type is null", 0);
+    
     return ;
   } 
   arg4 = (float32)jarg4; 
   arg5 = (b2Transform *)jarg5;
   if (!arg5) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Transform const & type is null", 0);
+    
     return ;
   } 
   arg6 = (float32)jarg6; 
@@ -3402,7 +3392,7 @@ SWIGEXPORT void SWIGSTDCALL CSharp_b2AABB_Combine__SWIG_0(void * jarg1, void * j
   arg1 = (b2AABB *)jarg1; 
   arg2 = (b2AABB *)jarg2;
   if (!arg2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2AABB const & type is null", 0);
+    
     return ;
   } 
   (arg1)->Combine((b2AABB const &)*arg2);
@@ -3417,12 +3407,12 @@ SWIGEXPORT void SWIGSTDCALL CSharp_b2AABB_Combine__SWIG_1(void * jarg1, void * j
   arg1 = (b2AABB *)jarg1; 
   arg2 = (b2AABB *)jarg2;
   if (!arg2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2AABB const & type is null", 0);
+    
     return ;
   } 
   arg3 = (b2AABB *)jarg3;
   if (!arg3) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2AABB const & type is null", 0);
+    
     return ;
   } 
   (arg1)->Combine((b2AABB const &)*arg2,(b2AABB const &)*arg3);
@@ -3438,7 +3428,7 @@ SWIGEXPORT unsigned int SWIGSTDCALL CSharp_b2AABB_Contains(void * jarg1, void * 
   arg1 = (b2AABB *)jarg1; 
   arg2 = (b2AABB *)jarg2;
   if (!arg2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2AABB const & type is null", 0);
+    
     return 0;
   } 
   result = (bool)((b2AABB const *)arg1)->Contains((b2AABB const &)*arg2);
@@ -3458,7 +3448,7 @@ SWIGEXPORT unsigned int SWIGSTDCALL CSharp_b2AABB_RayCast(void * jarg1, void * j
   arg2 = (b2RayCastOutput *)jarg2; 
   arg3 = (b2RayCastInput *)jarg3;
   if (!arg3) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2RayCastInput const & type is null", 0);
+    
     return 0;
   } 
   result = (bool)((b2AABB const *)arg1)->RayCast(arg2,(b2RayCastInput const &)*arg3);
@@ -3540,13 +3530,13 @@ SWIGEXPORT void SWIGSTDCALL CSharp_b2CollideCircles(void * jarg1, void * jarg2, 
   arg2 = (b2CircleShape *)jarg2; 
   arg3 = (b2Transform *)jarg3;
   if (!arg3) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Transform const & type is null", 0);
+    
     return ;
   } 
   arg4 = (b2CircleShape *)jarg4; 
   arg5 = (b2Transform *)jarg5;
   if (!arg5) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Transform const & type is null", 0);
+    
     return ;
   } 
   b2CollideCircles(arg1,(b2CircleShape const *)arg2,(b2Transform const &)*arg3,(b2CircleShape const *)arg4,(b2Transform const &)*arg5);
@@ -3564,13 +3554,13 @@ SWIGEXPORT void SWIGSTDCALL CSharp_b2CollidePolygonAndCircle(void * jarg1, void 
   arg2 = (b2PolygonShape *)jarg2; 
   arg3 = (b2Transform *)jarg3;
   if (!arg3) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Transform const & type is null", 0);
+    
     return ;
   } 
   arg4 = (b2CircleShape *)jarg4; 
   arg5 = (b2Transform *)jarg5;
   if (!arg5) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Transform const & type is null", 0);
+    
     return ;
   } 
   b2CollidePolygonAndCircle(arg1,(b2PolygonShape const *)arg2,(b2Transform const &)*arg3,(b2CircleShape const *)arg4,(b2Transform const &)*arg5);
@@ -3588,13 +3578,13 @@ SWIGEXPORT void SWIGSTDCALL CSharp_b2CollidePolygons(void * jarg1, void * jarg2,
   arg2 = (b2PolygonShape *)jarg2; 
   arg3 = (b2Transform *)jarg3;
   if (!arg3) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Transform const & type is null", 0);
+    
     return ;
   } 
   arg4 = (b2PolygonShape *)jarg4; 
   arg5 = (b2Transform *)jarg5;
   if (!arg5) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Transform const & type is null", 0);
+    
     return ;
   } 
   b2CollidePolygons(arg1,(b2PolygonShape const *)arg2,(b2Transform const &)*arg3,(b2PolygonShape const *)arg4,(b2Transform const &)*arg5);
@@ -3612,13 +3602,13 @@ SWIGEXPORT void SWIGSTDCALL CSharp_b2CollideEdgeAndCircle(void * jarg1, void * j
   arg2 = (b2EdgeShape *)jarg2; 
   arg3 = (b2Transform *)jarg3;
   if (!arg3) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Transform const & type is null", 0);
+    
     return ;
   } 
   arg4 = (b2CircleShape *)jarg4; 
   arg5 = (b2Transform *)jarg5;
   if (!arg5) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Transform const & type is null", 0);
+    
     return ;
   } 
   b2CollideEdgeAndCircle(arg1,(b2EdgeShape const *)arg2,(b2Transform const &)*arg3,(b2CircleShape const *)arg4,(b2Transform const &)*arg5);
@@ -3636,13 +3626,13 @@ SWIGEXPORT void SWIGSTDCALL CSharp_b2CollideEdgeAndPolygon(void * jarg1, void * 
   arg2 = (b2EdgeShape *)jarg2; 
   arg3 = (b2Transform *)jarg3;
   if (!arg3) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Transform const & type is null", 0);
+    
     return ;
   } 
   arg4 = (b2PolygonShape *)jarg4; 
   arg5 = (b2Transform *)jarg5;
   if (!arg5) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Transform const & type is null", 0);
+    
     return ;
   } 
   b2CollideEdgeAndPolygon(arg1,(b2EdgeShape const *)arg2,(b2Transform const &)*arg3,(b2PolygonShape const *)arg4,(b2Transform const &)*arg5);
@@ -3662,7 +3652,7 @@ SWIGEXPORT int SWIGSTDCALL CSharp_b2ClipSegmentToLine(void * jarg1, void * jarg2
   arg2 = (b2ClipVertex *)jarg2; 
   arg3 = (b2Vec2 *)jarg3;
   if (!arg3) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec2 const & type is null", 0);
+    
     return 0;
   } 
   arg4 = (float32)jarg4; 
@@ -3689,12 +3679,12 @@ SWIGEXPORT unsigned int SWIGSTDCALL CSharp_b2TestOverlap__SWIG_0(void * jarg1, i
   arg4 = (int32)jarg4; 
   arg5 = (b2Transform *)jarg5;
   if (!arg5) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Transform const & type is null", 0);
+    
     return 0;
   } 
   arg6 = (b2Transform *)jarg6;
   if (!arg6) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Transform const & type is null", 0);
+    
     return 0;
   } 
   result = (bool)b2TestOverlap((b2Shape const *)arg1,arg2,(b2Shape const *)arg3,arg4,(b2Transform const &)*arg5,(b2Transform const &)*arg6);
@@ -3711,12 +3701,12 @@ SWIGEXPORT unsigned int SWIGSTDCALL CSharp_b2TestOverlap__SWIG_1(void * jarg1, v
   
   arg1 = (b2AABB *)jarg1;
   if (!arg1) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2AABB const & type is null", 0);
+    
     return 0;
   } 
   arg2 = (b2AABB *)jarg2;
   if (!arg2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2AABB const & type is null", 0);
+    
     return 0;
   } 
   result = (bool)b2TestOverlap((b2AABB const &)*arg1,(b2AABB const &)*arg2);
@@ -3865,12 +3855,12 @@ SWIGEXPORT unsigned int SWIGSTDCALL CSharp_b2Shape_TestPoint(void * jarg1, void 
   arg1 = (b2Shape *)jarg1; 
   arg2 = (b2Transform *)jarg2;
   if (!arg2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Transform const & type is null", 0);
+    
     return 0;
   } 
   arg3 = (b2Vec2 *)jarg3;
   if (!arg3) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec2 const & type is null", 0);
+    
     return 0;
   } 
   result = (bool)((b2Shape const *)arg1)->TestPoint((b2Transform const &)*arg2,(b2Vec2 const &)*arg3);
@@ -3892,12 +3882,12 @@ SWIGEXPORT unsigned int SWIGSTDCALL CSharp_b2Shape_RayCast(void * jarg1, void * 
   arg2 = (b2RayCastOutput *)jarg2; 
   arg3 = (b2RayCastInput *)jarg3;
   if (!arg3) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2RayCastInput const & type is null", 0);
+    
     return 0;
   } 
   arg4 = (b2Transform *)jarg4;
   if (!arg4) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Transform const & type is null", 0);
+    
     return 0;
   } 
   arg5 = (int32)jarg5; 
@@ -3917,7 +3907,7 @@ SWIGEXPORT void SWIGSTDCALL CSharp_b2Shape_ComputeAABB(void * jarg1, void * jarg
   arg2 = (b2AABB *)jarg2; 
   arg3 = (b2Transform *)jarg3;
   if (!arg3) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Transform const & type is null", 0);
+    
     return ;
   } 
   arg4 = (int32)jarg4; 
@@ -4027,12 +4017,12 @@ SWIGEXPORT unsigned int SWIGSTDCALL CSharp_b2CircleShape_TestPoint(void * jarg1,
   arg1 = (b2CircleShape *)jarg1; 
   arg2 = (b2Transform *)jarg2;
   if (!arg2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Transform const & type is null", 0);
+    
     return 0;
   } 
   arg3 = (b2Vec2 *)jarg3;
   if (!arg3) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec2 const & type is null", 0);
+    
     return 0;
   } 
   result = (bool)((b2CircleShape const *)arg1)->TestPoint((b2Transform const &)*arg2,(b2Vec2 const &)*arg3);
@@ -4054,12 +4044,12 @@ SWIGEXPORT unsigned int SWIGSTDCALL CSharp_b2CircleShape_RayCast(void * jarg1, v
   arg2 = (b2RayCastOutput *)jarg2; 
   arg3 = (b2RayCastInput *)jarg3;
   if (!arg3) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2RayCastInput const & type is null", 0);
+    
     return 0;
   } 
   arg4 = (b2Transform *)jarg4;
   if (!arg4) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Transform const & type is null", 0);
+    
     return 0;
   } 
   arg5 = (int32)jarg5; 
@@ -4079,7 +4069,7 @@ SWIGEXPORT void SWIGSTDCALL CSharp_b2CircleShape_ComputeAABB(void * jarg1, void 
   arg2 = (b2AABB *)jarg2; 
   arg3 = (b2Transform *)jarg3;
   if (!arg3) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Transform const & type is null", 0);
+    
     return ;
   } 
   arg4 = (int32)jarg4; 
@@ -4108,7 +4098,7 @@ SWIGEXPORT int SWIGSTDCALL CSharp_b2CircleShape_GetSupport(void * jarg1, void * 
   arg1 = (b2CircleShape *)jarg1; 
   arg2 = (b2Vec2 *)jarg2;
   if (!arg2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec2 const & type is null", 0);
+    
     return 0;
   } 
   result = (int32)((b2CircleShape const *)arg1)->GetSupport((b2Vec2 const &)*arg2);
@@ -4126,7 +4116,7 @@ SWIGEXPORT void * SWIGSTDCALL CSharp_b2CircleShape_GetSupportVertex(void * jarg1
   arg1 = (b2CircleShape *)jarg1; 
   arg2 = (b2Vec2 *)jarg2;
   if (!arg2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec2 const & type is null", 0);
+    
     return 0;
   } 
   result = (b2Vec2 *) &((b2CircleShape const *)arg1)->GetSupportVertex((b2Vec2 const &)*arg2);
@@ -4209,12 +4199,12 @@ SWIGEXPORT void SWIGSTDCALL CSharp_b2EdgeShape_Set(void * jarg1, void * jarg2, v
   arg1 = (b2EdgeShape *)jarg1; 
   arg2 = (b2Vec2 *)jarg2;
   if (!arg2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec2 const & type is null", 0);
+    
     return ;
   } 
   arg3 = (b2Vec2 *)jarg3;
   if (!arg3) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec2 const & type is null", 0);
+    
     return ;
   } 
   (arg1)->Set((b2Vec2 const &)*arg2,(b2Vec2 const &)*arg3);
@@ -4257,12 +4247,12 @@ SWIGEXPORT unsigned int SWIGSTDCALL CSharp_b2EdgeShape_TestPoint(void * jarg1, v
   arg1 = (b2EdgeShape *)jarg1; 
   arg2 = (b2Transform *)jarg2;
   if (!arg2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Transform const & type is null", 0);
+    
     return 0;
   } 
   arg3 = (b2Vec2 *)jarg3;
   if (!arg3) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec2 const & type is null", 0);
+    
     return 0;
   } 
   result = (bool)((b2EdgeShape const *)arg1)->TestPoint((b2Transform const &)*arg2,(b2Vec2 const &)*arg3);
@@ -4284,12 +4274,12 @@ SWIGEXPORT unsigned int SWIGSTDCALL CSharp_b2EdgeShape_RayCast(void * jarg1, voi
   arg2 = (b2RayCastOutput *)jarg2; 
   arg3 = (b2RayCastInput *)jarg3;
   if (!arg3) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2RayCastInput const & type is null", 0);
+    
     return 0;
   } 
   arg4 = (b2Transform *)jarg4;
   if (!arg4) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Transform const & type is null", 0);
+    
     return 0;
   } 
   arg5 = (int32)jarg5; 
@@ -4309,7 +4299,7 @@ SWIGEXPORT void SWIGSTDCALL CSharp_b2EdgeShape_ComputeAABB(void * jarg1, void * 
   arg2 = (b2AABB *)jarg2; 
   arg3 = (b2Transform *)jarg3;
   if (!arg3) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Transform const & type is null", 0);
+    
     return ;
   } 
   arg4 = (int32)jarg4; 
@@ -4518,7 +4508,7 @@ SWIGEXPORT void SWIGSTDCALL CSharp_b2ChainShape_SetPrevVertex(void * jarg1, void
   arg1 = (b2ChainShape *)jarg1; 
   arg2 = (b2Vec2 *)jarg2;
   if (!arg2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec2 const & type is null", 0);
+    
     return ;
   } 
   (arg1)->SetPrevVertex((b2Vec2 const &)*arg2);
@@ -4532,7 +4522,7 @@ SWIGEXPORT void SWIGSTDCALL CSharp_b2ChainShape_SetNextVertex(void * jarg1, void
   arg1 = (b2ChainShape *)jarg1; 
   arg2 = (b2Vec2 *)jarg2;
   if (!arg2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec2 const & type is null", 0);
+    
     return ;
   } 
   (arg1)->SetNextVertex((b2Vec2 const &)*arg2);
@@ -4587,12 +4577,12 @@ SWIGEXPORT unsigned int SWIGSTDCALL CSharp_b2ChainShape_TestPoint(void * jarg1, 
   arg1 = (b2ChainShape *)jarg1; 
   arg2 = (b2Transform *)jarg2;
   if (!arg2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Transform const & type is null", 0);
+    
     return 0;
   } 
   arg3 = (b2Vec2 *)jarg3;
   if (!arg3) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec2 const & type is null", 0);
+    
     return 0;
   } 
   result = (bool)((b2ChainShape const *)arg1)->TestPoint((b2Transform const &)*arg2,(b2Vec2 const &)*arg3);
@@ -4614,12 +4604,12 @@ SWIGEXPORT unsigned int SWIGSTDCALL CSharp_b2ChainShape_RayCast(void * jarg1, vo
   arg2 = (b2RayCastOutput *)jarg2; 
   arg3 = (b2RayCastInput *)jarg3;
   if (!arg3) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2RayCastInput const & type is null", 0);
+    
     return 0;
   } 
   arg4 = (b2Transform *)jarg4;
   if (!arg4) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Transform const & type is null", 0);
+    
     return 0;
   } 
   arg5 = (int32)jarg5; 
@@ -4639,7 +4629,7 @@ SWIGEXPORT void SWIGSTDCALL CSharp_b2ChainShape_ComputeAABB(void * jarg1, void *
   arg2 = (b2AABB *)jarg2; 
   arg3 = (b2Transform *)jarg3;
   if (!arg3) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Transform const & type is null", 0);
+    
     return ;
   } 
   arg4 = (int32)jarg4; 
@@ -4863,7 +4853,7 @@ SWIGEXPORT void SWIGSTDCALL CSharp_b2PolygonShape_SetAsBox__SWIG_1(void * jarg1,
   arg3 = (float32)jarg3; 
   arg4 = (b2Vec2 *)jarg4;
   if (!arg4) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec2 const & type is null", 0);
+    
     return ;
   } 
   arg5 = (float32)jarg5; 
@@ -4881,12 +4871,12 @@ SWIGEXPORT unsigned int SWIGSTDCALL CSharp_b2PolygonShape_TestPoint(void * jarg1
   arg1 = (b2PolygonShape *)jarg1; 
   arg2 = (b2Transform *)jarg2;
   if (!arg2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Transform const & type is null", 0);
+    
     return 0;
   } 
   arg3 = (b2Vec2 *)jarg3;
   if (!arg3) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec2 const & type is null", 0);
+    
     return 0;
   } 
   result = (bool)((b2PolygonShape const *)arg1)->TestPoint((b2Transform const &)*arg2,(b2Vec2 const &)*arg3);
@@ -4908,12 +4898,12 @@ SWIGEXPORT unsigned int SWIGSTDCALL CSharp_b2PolygonShape_RayCast(void * jarg1, 
   arg2 = (b2RayCastOutput *)jarg2; 
   arg3 = (b2RayCastInput *)jarg3;
   if (!arg3) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2RayCastInput const & type is null", 0);
+    
     return 0;
   } 
   arg4 = (b2Transform *)jarg4;
   if (!arg4) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Transform const & type is null", 0);
+    
     return 0;
   } 
   arg5 = (int32)jarg5; 
@@ -4933,7 +4923,7 @@ SWIGEXPORT void SWIGSTDCALL CSharp_b2PolygonShape_ComputeAABB(void * jarg1, void
   arg2 = (b2AABB *)jarg2; 
   arg3 = (b2Transform *)jarg3;
   if (!arg3) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Transform const & type is null", 0);
+    
     return ;
   } 
   arg4 = (int32)jarg4; 
@@ -5261,7 +5251,7 @@ SWIGEXPORT int SWIGSTDCALL CSharp_b2DynamicTree_CreateProxy(void * jarg1, void *
   arg1 = (b2DynamicTree *)jarg1; 
   arg2 = (b2AABB *)jarg2;
   if (!arg2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2AABB const & type is null", 0);
+    
     return 0;
   } 
   arg3 = (void *)jarg3; 
@@ -5293,12 +5283,12 @@ SWIGEXPORT unsigned int SWIGSTDCALL CSharp_b2DynamicTree_MoveProxy(void * jarg1,
   arg2 = (int32)jarg2; 
   arg3 = (b2AABB *)jarg3;
   if (!arg3) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2AABB const & type is null", 0);
+    
     return 0;
   } 
   arg4 = (b2Vec2 *)jarg4;
   if (!arg4) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec2 const & type is null", 0);
+    
     return 0;
   } 
   result = (bool)(arg1)->MoveProxy(arg2,(b2AABB const &)*arg3,(b2Vec2 const &)*arg4);
@@ -5509,7 +5499,7 @@ SWIGEXPORT int SWIGSTDCALL CSharp_b2BroadPhase_CreateProxy(void * jarg1, void * 
   arg1 = (b2BroadPhase *)jarg1; 
   arg2 = (b2AABB *)jarg2;
   if (!arg2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2AABB const & type is null", 0);
+    
     return 0;
   } 
   arg3 = (void *)jarg3; 
@@ -5539,12 +5529,12 @@ SWIGEXPORT void SWIGSTDCALL CSharp_b2BroadPhase_MoveProxy(void * jarg1, int jarg
   arg2 = (int32)jarg2; 
   arg3 = (b2AABB *)jarg3;
   if (!arg3) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2AABB const & type is null", 0);
+    
     return ;
   } 
   arg4 = (b2Vec2 *)jarg4;
   if (!arg4) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec2 const & type is null", 0);
+    
     return ;
   } 
   (arg1)->MoveProxy(arg2,(b2AABB const &)*arg3,(b2Vec2 const &)*arg4);
@@ -5661,12 +5651,12 @@ SWIGEXPORT unsigned int SWIGSTDCALL CSharp_b2PairLessThan(void * jarg1, void * j
   
   arg1 = (b2Pair *)jarg1;
   if (!arg1) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Pair const & type is null", 0);
+    
     return 0;
   } 
   arg2 = (b2Pair *)jarg2;
   if (!arg2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Pair const & type is null", 0);
+    
     return 0;
   } 
   result = (bool)b2PairLessThan((b2Pair const &)*arg1,(b2Pair const &)*arg2);
@@ -5706,7 +5696,7 @@ SWIGEXPORT int SWIGSTDCALL CSharp_b2DistanceProxy_GetSupport(void * jarg1, void 
   arg1 = (b2DistanceProxy *)jarg1; 
   arg2 = (b2Vec2 *)jarg2;
   if (!arg2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec2 const & type is null", 0);
+    
     return 0;
   } 
   result = (int32)((b2DistanceProxy const *)arg1)->GetSupport((b2Vec2 const &)*arg2);
@@ -5724,7 +5714,7 @@ SWIGEXPORT void * SWIGSTDCALL CSharp_b2DistanceProxy_GetSupportVertex(void * jar
   arg1 = (b2DistanceProxy *)jarg1; 
   arg2 = (b2Vec2 *)jarg2;
   if (!arg2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec2 const & type is null", 0);
+    
     return 0;
   } 
   result = (b2Vec2 *) &((b2DistanceProxy const *)arg1)->GetSupportVertex((b2Vec2 const &)*arg2);
@@ -6793,7 +6783,7 @@ SWIGEXPORT void SWIGSTDCALL CSharp_b2Body_SetTransform(void * jarg1, void * jarg
   arg1 = (b2Body *)jarg1; 
   arg2 = (b2Vec2 *)jarg2;
   if (!arg2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec2 const & type is null", 0);
+    
     return ;
   } 
   arg3 = (float32)jarg3; 
@@ -6868,7 +6858,7 @@ SWIGEXPORT void SWIGSTDCALL CSharp_b2Body_SetLinearVelocity(void * jarg1, void *
   arg1 = (b2Body *)jarg1; 
   arg2 = (b2Vec2 *)jarg2;
   if (!arg2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec2 const & type is null", 0);
+    
     return ;
   } 
   (arg1)->SetLinearVelocity((b2Vec2 const &)*arg2);
@@ -6917,12 +6907,12 @@ SWIGEXPORT void SWIGSTDCALL CSharp_b2Body_ApplyForce(void * jarg1, void * jarg2,
   arg1 = (b2Body *)jarg1; 
   arg2 = (b2Vec2 *)jarg2;
   if (!arg2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec2 const & type is null", 0);
+    
     return ;
   } 
   arg3 = (b2Vec2 *)jarg3;
   if (!arg3) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec2 const & type is null", 0);
+    
     return ;
   } 
   (arg1)->ApplyForce((b2Vec2 const &)*arg2,(b2Vec2 const &)*arg3);
@@ -6936,7 +6926,7 @@ SWIGEXPORT void SWIGSTDCALL CSharp_b2Body_ApplyForceToCenter(void * jarg1, void 
   arg1 = (b2Body *)jarg1; 
   arg2 = (b2Vec2 *)jarg2;
   if (!arg2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec2 const & type is null", 0);
+    
     return ;
   } 
   (arg1)->ApplyForceToCenter((b2Vec2 const &)*arg2);
@@ -6961,12 +6951,12 @@ SWIGEXPORT void SWIGSTDCALL CSharp_b2Body_ApplyLinearImpulse(void * jarg1, void 
   arg1 = (b2Body *)jarg1; 
   arg2 = (b2Vec2 *)jarg2;
   if (!arg2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec2 const & type is null", 0);
+    
     return ;
   } 
   arg3 = (b2Vec2 *)jarg3;
   if (!arg3) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec2 const & type is null", 0);
+    
     return ;
   } 
   (arg1)->ApplyLinearImpulse((b2Vec2 const &)*arg2,(b2Vec2 const &)*arg3);
@@ -7044,7 +7034,7 @@ SWIGEXPORT void * SWIGSTDCALL CSharp_b2Body_GetWorldPoint(void * jarg1, void * j
   arg1 = (b2Body *)jarg1; 
   arg2 = (b2Vec2 *)jarg2;
   if (!arg2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec2 const & type is null", 0);
+    
     return 0;
   } 
   result = ((b2Body const *)arg1)->GetWorldPoint((b2Vec2 const &)*arg2);
@@ -7062,7 +7052,7 @@ SWIGEXPORT void * SWIGSTDCALL CSharp_b2Body_GetWorldVector(void * jarg1, void * 
   arg1 = (b2Body *)jarg1; 
   arg2 = (b2Vec2 *)jarg2;
   if (!arg2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec2 const & type is null", 0);
+    
     return 0;
   } 
   result = ((b2Body const *)arg1)->GetWorldVector((b2Vec2 const &)*arg2);
@@ -7080,7 +7070,7 @@ SWIGEXPORT void * SWIGSTDCALL CSharp_b2Body_GetLocalPoint(void * jarg1, void * j
   arg1 = (b2Body *)jarg1; 
   arg2 = (b2Vec2 *)jarg2;
   if (!arg2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec2 const & type is null", 0);
+    
     return 0;
   } 
   result = ((b2Body const *)arg1)->GetLocalPoint((b2Vec2 const &)*arg2);
@@ -7098,7 +7088,7 @@ SWIGEXPORT void * SWIGSTDCALL CSharp_b2Body_GetLocalVector(void * jarg1, void * 
   arg1 = (b2Body *)jarg1; 
   arg2 = (b2Vec2 *)jarg2;
   if (!arg2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec2 const & type is null", 0);
+    
     return 0;
   } 
   result = ((b2Body const *)arg1)->GetLocalVector((b2Vec2 const &)*arg2);
@@ -7116,7 +7106,7 @@ SWIGEXPORT void * SWIGSTDCALL CSharp_b2Body_GetLinearVelocityFromWorldPoint(void
   arg1 = (b2Body *)jarg1; 
   arg2 = (b2Vec2 *)jarg2;
   if (!arg2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec2 const & type is null", 0);
+    
     return 0;
   } 
   result = ((b2Body const *)arg1)->GetLinearVelocityFromWorldPoint((b2Vec2 const &)*arg2);
@@ -7134,7 +7124,7 @@ SWIGEXPORT void * SWIGSTDCALL CSharp_b2Body_GetLinearVelocityFromLocalPoint(void
   arg1 = (b2Body *)jarg1; 
   arg2 = (b2Vec2 *)jarg2;
   if (!arg2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec2 const & type is null", 0);
+    
     return 0;
   } 
   result = ((b2Body const *)arg1)->GetLinearVelocityFromLocalPoint((b2Vec2 const &)*arg2);
@@ -7846,7 +7836,7 @@ SWIGEXPORT void SWIGSTDCALL CSharp_b2Fixture_SetFilterData(void * jarg1, void * 
   arg1 = (b2Fixture *)jarg1; 
   arg2 = (b2Filter *)jarg2;
   if (!arg2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Filter const & type is null", 0);
+    
     return ;
   } 
   (arg1)->SetFilterData((b2Filter const &)*arg2);
@@ -7928,7 +7918,7 @@ SWIGEXPORT unsigned int SWIGSTDCALL CSharp_b2Fixture_TestPoint(void * jarg1, voi
   arg1 = (b2Fixture *)jarg1; 
   arg2 = (b2Vec2 *)jarg2;
   if (!arg2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec2 const & type is null", 0);
+    
     return 0;
   } 
   result = (bool)((b2Fixture const *)arg1)->TestPoint((b2Vec2 const &)*arg2);
@@ -7949,7 +7939,7 @@ SWIGEXPORT unsigned int SWIGSTDCALL CSharp_b2Fixture_RayCast(void * jarg1, void 
   arg2 = (b2RayCastOutput *)jarg2; 
   arg3 = (b2RayCastInput *)jarg3;
   if (!arg3) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2RayCastInput const & type is null", 0);
+    
     return 0;
   } 
   arg4 = (int32)jarg4; 
@@ -8326,12 +8316,12 @@ SWIGEXPORT float SWIGSTDCALL CSharp_b2RayCastCallback_ReportFixture(void * jarg1
   arg2 = (b2Fixture *)jarg2; 
   arg3 = (b2Vec2 *)jarg3;
   if (!arg3) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec2 const & type is null", 0);
+    
     return 0;
   } 
   arg4 = (b2Vec2 *)jarg4;
   if (!arg4) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec2 const & type is null", 0);
+    
     return 0;
   } 
   arg5 = (float32)jarg5; 
@@ -8932,14 +8922,12 @@ SWIGEXPORT void SWIGSTDCALL CSharp_b2StackEntry_data_set(void * jarg1, char * ja
 
 
 SWIGEXPORT char * SWIGSTDCALL CSharp_b2StackEntry_data_get(void * jarg1) {
-  char * jresult ;
   b2StackEntry *arg1 = (b2StackEntry *) 0 ;
   char *result = 0 ;
   
   arg1 = (b2StackEntry *)jarg1; 
   result = (char *) ((arg1)->data);
-  jresult = SWIG_csharp_string_callback((const char *)result); 
-  return jresult;
+  return result;
 }
 
 
@@ -9254,7 +9242,7 @@ SWIGEXPORT void * SWIGSTDCALL CSharp_new_b2World(void * jarg1) {
   
   arg1 = (b2Vec2 *)jarg1;
   if (!arg1) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec2 const & type is null", 0);
+    
     return 0;
   } 
   result = (b2World *)new b2World((b2Vec2 const &)*arg1);
@@ -9398,7 +9386,7 @@ SWIGEXPORT void SWIGSTDCALL CSharp_b2World_QueryAABB(void * jarg1, void * jarg2,
   arg2 = (b2QueryCallback *)jarg2; 
   arg3 = (b2AABB *)jarg3;
   if (!arg3) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2AABB const & type is null", 0);
+    
     return ;
   } 
   ((b2World const *)arg1)->QueryAABB(arg2,(b2AABB const &)*arg3);
@@ -9415,12 +9403,12 @@ SWIGEXPORT void SWIGSTDCALL CSharp_b2World_RayCast(void * jarg1, void * jarg2, v
   arg2 = (b2RayCastCallback *)jarg2; 
   arg3 = (b2Vec2 *)jarg3;
   if (!arg3) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec2 const & type is null", 0);
+    
     return ;
   } 
   arg4 = (b2Vec2 *)jarg4;
   if (!arg4) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec2 const & type is null", 0);
+    
     return ;
   } 
   ((b2World const *)arg1)->RayCast(arg2,(b2Vec2 const &)*arg3,(b2Vec2 const &)*arg4);
@@ -9642,7 +9630,7 @@ SWIGEXPORT void SWIGSTDCALL CSharp_b2World_SetGravity(void * jarg1, void * jarg2
   arg1 = (b2World *)jarg1; 
   arg2 = (b2Vec2 *)jarg2;
   if (!arg2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec2 const & type is null", 0);
+    
     return ;
   } 
   (arg1)->SetGravity((b2Vec2 const &)*arg2);
@@ -10131,12 +10119,12 @@ SWIGEXPORT void SWIGSTDCALL CSharp_b2Contact_Evaluate(void * jarg1, void * jarg2
   arg2 = (b2Manifold *)jarg2; 
   arg3 = (b2Transform *)jarg3;
   if (!arg3) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Transform const & type is null", 0);
+    
     return ;
   } 
   arg4 = (b2Transform *)jarg4;
   if (!arg4) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Transform const & type is null", 0);
+    
     return ;
   } 
   (arg1)->Evaluate(arg2,(b2Transform const &)*arg3,(b2Transform const &)*arg4);
@@ -10637,12 +10625,12 @@ SWIGEXPORT void SWIGSTDCALL CSharp_b2DistanceJointDef_Initialize(void * jarg1, v
   arg3 = (b2Body *)jarg3; 
   arg4 = (b2Vec2 *)jarg4;
   if (!arg4) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec2 const & type is null", 0);
+    
     return ;
   } 
   arg5 = (b2Vec2 *)jarg5;
   if (!arg5) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec2 const & type is null", 0);
+    
     return ;
   } 
   (arg1)->Initialize(arg2,arg3,(b2Vec2 const &)*arg4,(b2Vec2 const &)*arg5);
@@ -10946,7 +10934,7 @@ SWIGEXPORT void SWIGSTDCALL CSharp_b2FrictionJointDef_Initialize(void * jarg1, v
   arg3 = (b2Body *)jarg3; 
   arg4 = (b2Vec2 *)jarg4;
   if (!arg4) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec2 const & type is null", 0);
+    
     return ;
   } 
   (arg1)->Initialize(arg2,arg3,(b2Vec2 const &)*arg4);
@@ -11405,12 +11393,12 @@ SWIGEXPORT void SWIGSTDCALL CSharp_b2WheelJointDef_Initialize(void * jarg1, void
   arg3 = (b2Body *)jarg3; 
   arg4 = (b2Vec2 *)jarg4;
   if (!arg4) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec2 const & type is null", 0);
+    
     return ;
   } 
   arg5 = (b2Vec2 *)jarg5;
   if (!arg5) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec2 const & type is null", 0);
+    
     return ;
   } 
   (arg1)->Initialize(arg2,arg3,(b2Vec2 const &)*arg4,(b2Vec2 const &)*arg5);
@@ -12028,7 +12016,7 @@ SWIGEXPORT void SWIGSTDCALL CSharp_b2MouseJoint_SetTarget(void * jarg1, void * j
   arg1 = (b2MouseJoint *)jarg1; 
   arg2 = (b2Vec2 *)jarg2;
   if (!arg2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec2 const & type is null", 0);
+    
     return ;
   } 
   (arg1)->SetTarget((b2Vec2 const &)*arg2);
@@ -12151,12 +12139,12 @@ SWIGEXPORT void SWIGSTDCALL CSharp_b2PrismaticJointDef_Initialize(void * jarg1, 
   arg3 = (b2Body *)jarg3; 
   arg4 = (b2Vec2 *)jarg4;
   if (!arg4) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec2 const & type is null", 0);
+    
     return ;
   } 
   arg5 = (b2Vec2 *)jarg5;
   if (!arg5) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec2 const & type is null", 0);
+    
     return ;
   } 
   (arg1)->Initialize(arg2,arg3,(b2Vec2 const &)*arg4,(b2Vec2 const &)*arg5);
@@ -12704,22 +12692,22 @@ SWIGEXPORT void SWIGSTDCALL CSharp_b2PulleyJointDef_Initialize(void * jarg1, voi
   arg3 = (b2Body *)jarg3; 
   arg4 = (b2Vec2 *)jarg4;
   if (!arg4) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec2 const & type is null", 0);
+    
     return ;
   } 
   arg5 = (b2Vec2 *)jarg5;
   if (!arg5) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec2 const & type is null", 0);
+    
     return ;
   } 
   arg6 = (b2Vec2 *)jarg6;
   if (!arg6) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec2 const & type is null", 0);
+    
     return ;
   } 
   arg7 = (b2Vec2 *)jarg7;
   if (!arg7) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec2 const & type is null", 0);
+    
     return ;
   } 
   arg8 = (float32)jarg8; 
@@ -13038,7 +13026,7 @@ SWIGEXPORT void SWIGSTDCALL CSharp_b2RevoluteJointDef_Initialize(void * jarg1, v
   arg3 = (b2Body *)jarg3; 
   arg4 = (b2Vec2 *)jarg4;
   if (!arg4) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec2 const & type is null", 0);
+    
     return ;
   } 
   (arg1)->Initialize(arg2,arg3,(b2Vec2 const &)*arg4);
@@ -13748,7 +13736,7 @@ SWIGEXPORT void SWIGSTDCALL CSharp_b2WeldJointDef_Initialize(void * jarg1, void 
   arg3 = (b2Body *)jarg3; 
   arg4 = (b2Vec2 *)jarg4;
   if (!arg4) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "b2Vec2 const & type is null", 0);
+    
     return ;
   } 
   (arg1)->Initialize(arg2,arg3,(b2Vec2 const &)*arg4);
