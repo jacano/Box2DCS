@@ -40,9 +40,9 @@ public class b2WheelJoint : b2Joint {
     }
   }
 
-  public void GetDefinition(b2WheelJointDef def) {
-    Box2DPINVOKE.b2WheelJoint_GetDefinition(swigCPtr, b2WheelJointDef.getCPtr(def));
-  }
+  //public void GetDefinition(b2WheelJointDef def) {
+  //  Box2DPINVOKE.b2WheelJoint_GetDefinition(swigCPtr, b2WheelJointDef.getCPtr(def));
+  //}
 
   public override b2Vec2 GetAnchorA() {
     b2Vec2 ret = new b2Vec2(Box2DPINVOKE.b2WheelJoint_GetAnchorA(swigCPtr), true);
