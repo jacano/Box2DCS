@@ -45,7 +45,7 @@ public class b2PrismaticJointDef : b2JointDef {
 
   public void Initialize(b2Body bodyA, b2Body bodyB, b2Vec2 anchor, b2Vec2 axis) {
     Box2DPINVOKE.b2PrismaticJointDef_Initialize(swigCPtr, b2Body.getCPtr(bodyA), b2Body.getCPtr(bodyB), b2Vec2.getCPtr(anchor), b2Vec2.getCPtr(axis));
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
   }
 
   public b2Vec2 localAnchorA {

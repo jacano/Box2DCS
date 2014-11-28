@@ -50,13 +50,13 @@ public class b2DistanceProxy : IDisposable {
 
   public int GetSupport(b2Vec2 d) {
     int ret = Box2DPINVOKE.b2DistanceProxy_GetSupport(swigCPtr, b2Vec2.getCPtr(d));
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
     return ret;
   }
 
   public b2Vec2 GetSupportVertex(b2Vec2 d) {
     b2Vec2 ret = new b2Vec2(Box2DPINVOKE.b2DistanceProxy_GetSupportVertex(swigCPtr, b2Vec2.getCPtr(d)), false);
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
     return ret;
   }
 

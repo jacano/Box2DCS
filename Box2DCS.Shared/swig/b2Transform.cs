@@ -45,7 +45,7 @@ public class b2Transform : IDisposable {
   }
 
   public b2Transform(b2Vec2 position, b2Rot rotation) : this(Box2DPINVOKE.new_b2Transform__SWIG_1(b2Vec2.getCPtr(position), b2Rot.getCPtr(rotation)), true) {
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
   }
 
   public void SetIdentity() {
@@ -54,7 +54,7 @@ public class b2Transform : IDisposable {
 
   public void Set(b2Vec2 position, float angle) {
     Box2DPINVOKE.b2Transform_Set(swigCPtr, b2Vec2.getCPtr(position), angle);
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
   }
 
   public b2Vec2 p {

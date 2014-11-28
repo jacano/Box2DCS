@@ -43,7 +43,7 @@ public class b2RayCastCallback : IDisposable {
 
   public virtual float ReportFixture(b2Fixture fixture, b2Vec2 point, b2Vec2 normal, float fraction) {
     float ret = Box2DPINVOKE.b2RayCastCallback_ReportFixture(swigCPtr, b2Fixture.getCPtr(fixture), b2Vec2.getCPtr(point), b2Vec2.getCPtr(normal), fraction);
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
     return ret;
   }
 

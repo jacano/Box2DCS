@@ -45,7 +45,7 @@ public class b2PulleyJointDef : b2JointDef {
 
   public void Initialize(b2Body bodyA, b2Body bodyB, b2Vec2 groundAnchorA, b2Vec2 groundAnchorB, b2Vec2 anchorA, b2Vec2 anchorB, float ratio) {
     Box2DPINVOKE.b2PulleyJointDef_Initialize(swigCPtr, b2Body.getCPtr(bodyA), b2Body.getCPtr(bodyB), b2Vec2.getCPtr(groundAnchorA), b2Vec2.getCPtr(groundAnchorB), b2Vec2.getCPtr(anchorA), b2Vec2.getCPtr(anchorB), ratio);
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
   }
 
   public b2Vec2 groundAnchorA {

@@ -46,7 +46,7 @@ public class b2BroadPhase : IDisposable {
 
   public int CreateProxy(b2AABB aabb, SWIGTYPE_p_void userData) {
     int ret = Box2DPINVOKE.b2BroadPhase_CreateProxy(swigCPtr, b2AABB.getCPtr(aabb), SWIGTYPE_p_void.getCPtr(userData));
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
     return ret;
   }
 
@@ -56,7 +56,7 @@ public class b2BroadPhase : IDisposable {
 
   public void MoveProxy(int proxyId, b2AABB aabb, b2Vec2 displacement) {
     Box2DPINVOKE.b2BroadPhase_MoveProxy(swigCPtr, proxyId, b2AABB.getCPtr(aabb), b2Vec2.getCPtr(displacement));
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
   }
 
   public void TouchProxy(int proxyId) {

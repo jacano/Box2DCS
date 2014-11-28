@@ -59,19 +59,19 @@ public class b2Shape : IDisposable {
 
   public virtual bool TestPoint(b2Transform xf, b2Vec2 p) {
     bool ret = Box2DPINVOKE.b2Shape_TestPoint(swigCPtr, b2Transform.getCPtr(xf), b2Vec2.getCPtr(p));
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
     return ret;
   }
 
   public virtual bool RayCast(b2RayCastOutput output, b2RayCastInput input, b2Transform transform, int childIndex) {
     bool ret = Box2DPINVOKE.b2Shape_RayCast(swigCPtr, b2RayCastOutput.getCPtr(output), b2RayCastInput.getCPtr(input), b2Transform.getCPtr(transform), childIndex);
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
     return ret;
   }
 
   public virtual void ComputeAABB(b2AABB aabb, b2Transform xf, int childIndex) {
     Box2DPINVOKE.b2Shape_ComputeAABB(swigCPtr, b2AABB.getCPtr(aabb), b2Transform.getCPtr(xf), childIndex);
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
   }
 
   public virtual void ComputeMass(b2MassData massData, float density) {

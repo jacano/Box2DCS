@@ -57,163 +57,163 @@ public class Box2D {
 
   public static float b2Dot(b2Vec2 a, b2Vec2 b) {
     float ret = Box2DPINVOKE.b2Dot__SWIG_0(b2Vec2.getCPtr(a), b2Vec2.getCPtr(b));
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
     return ret;
   }
 
   public static float b2Cross(b2Vec2 a, b2Vec2 b) {
     float ret = Box2DPINVOKE.b2Cross__SWIG_0(b2Vec2.getCPtr(a), b2Vec2.getCPtr(b));
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
     return ret;
   }
 
   public static b2Vec2 b2Cross(b2Vec2 a, float s) {
     b2Vec2 ret = new b2Vec2(Box2DPINVOKE.b2Cross__SWIG_1(b2Vec2.getCPtr(a), s), true);
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
     return ret;
   }
 
   public static b2Vec2 b2Cross(float s, b2Vec2 a) {
     b2Vec2 ret = new b2Vec2(Box2DPINVOKE.b2Cross__SWIG_2(s, b2Vec2.getCPtr(a)), true);
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
     return ret;
   }
 
   public static b2Vec2 b2Mul(b2Mat22 A, b2Vec2 v) {
     b2Vec2 ret = new b2Vec2(Box2DPINVOKE.b2Mul__SWIG_0(b2Mat22.getCPtr(A), b2Vec2.getCPtr(v)), true);
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
     return ret;
   }
 
   public static b2Vec2 b2MulT(b2Mat22 A, b2Vec2 v) {
     b2Vec2 ret = new b2Vec2(Box2DPINVOKE.b2MulT__SWIG_0(b2Mat22.getCPtr(A), b2Vec2.getCPtr(v)), true);
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
     return ret;
   }
 
   public static float b2Distance(b2Vec2 a, b2Vec2 b) {
     float ret = Box2DPINVOKE.b2Distance__SWIG_0(b2Vec2.getCPtr(a), b2Vec2.getCPtr(b));
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
     return ret;
   }
 
   public static float b2DistanceSquared(b2Vec2 a, b2Vec2 b) {
     float ret = Box2DPINVOKE.b2DistanceSquared(b2Vec2.getCPtr(a), b2Vec2.getCPtr(b));
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
     return ret;
   }
 
   public static float b2Dot(b2Vec3 a, b2Vec3 b) {
     float ret = Box2DPINVOKE.b2Dot__SWIG_1(b2Vec3.getCPtr(a), b2Vec3.getCPtr(b));
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
     return ret;
   }
 
   public static b2Vec3 b2Cross(b2Vec3 a, b2Vec3 b) {
     b2Vec3 ret = new b2Vec3(Box2DPINVOKE.b2Cross__SWIG_3(b2Vec3.getCPtr(a), b2Vec3.getCPtr(b)), true);
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
     return ret;
   }
 
   public static b2Mat22 b2Mul(b2Mat22 A, b2Mat22 B) {
     b2Mat22 ret = new b2Mat22(Box2DPINVOKE.b2Mul__SWIG_1(b2Mat22.getCPtr(A), b2Mat22.getCPtr(B)), true);
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
     return ret;
   }
 
   public static b2Mat22 b2MulT(b2Mat22 A, b2Mat22 B) {
     b2Mat22 ret = new b2Mat22(Box2DPINVOKE.b2MulT__SWIG_1(b2Mat22.getCPtr(A), b2Mat22.getCPtr(B)), true);
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
     return ret;
   }
 
   public static b2Vec3 b2Mul(b2Mat33 A, b2Vec3 v) {
     b2Vec3 ret = new b2Vec3(Box2DPINVOKE.b2Mul__SWIG_2(b2Mat33.getCPtr(A), b2Vec3.getCPtr(v)), true);
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
     return ret;
   }
 
   public static b2Vec2 b2Mul22(b2Mat33 A, b2Vec2 v) {
     b2Vec2 ret = new b2Vec2(Box2DPINVOKE.b2Mul22(b2Mat33.getCPtr(A), b2Vec2.getCPtr(v)), true);
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
     return ret;
   }
 
   public static b2Rot b2Mul(b2Rot q, b2Rot r) {
     b2Rot ret = new b2Rot(Box2DPINVOKE.b2Mul__SWIG_3(b2Rot.getCPtr(q), b2Rot.getCPtr(r)), true);
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
     return ret;
   }
 
   public static b2Rot b2MulT(b2Rot q, b2Rot r) {
     b2Rot ret = new b2Rot(Box2DPINVOKE.b2MulT__SWIG_2(b2Rot.getCPtr(q), b2Rot.getCPtr(r)), true);
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
     return ret;
   }
 
   public static b2Vec2 b2Mul(b2Rot q, b2Vec2 v) {
     b2Vec2 ret = new b2Vec2(Box2DPINVOKE.b2Mul__SWIG_4(b2Rot.getCPtr(q), b2Vec2.getCPtr(v)), true);
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
     return ret;
   }
 
   public static b2Vec2 b2MulT(b2Rot q, b2Vec2 v) {
     b2Vec2 ret = new b2Vec2(Box2DPINVOKE.b2MulT__SWIG_3(b2Rot.getCPtr(q), b2Vec2.getCPtr(v)), true);
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
     return ret;
   }
 
   public static b2Vec2 b2Mul(b2Transform T, b2Vec2 v) {
     b2Vec2 ret = new b2Vec2(Box2DPINVOKE.b2Mul__SWIG_5(b2Transform.getCPtr(T), b2Vec2.getCPtr(v)), true);
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
     return ret;
   }
 
   public static b2Vec2 b2MulT(b2Transform T, b2Vec2 v) {
     b2Vec2 ret = new b2Vec2(Box2DPINVOKE.b2MulT__SWIG_4(b2Transform.getCPtr(T), b2Vec2.getCPtr(v)), true);
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
     return ret;
   }
 
   public static b2Transform b2Mul(b2Transform A, b2Transform B) {
     b2Transform ret = new b2Transform(Box2DPINVOKE.b2Mul__SWIG_6(b2Transform.getCPtr(A), b2Transform.getCPtr(B)), true);
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
     return ret;
   }
 
   public static b2Transform b2MulT(b2Transform A, b2Transform B) {
     b2Transform ret = new b2Transform(Box2DPINVOKE.b2MulT__SWIG_5(b2Transform.getCPtr(A), b2Transform.getCPtr(B)), true);
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
     return ret;
   }
 
   public static b2Vec2 b2Abs(b2Vec2 a) {
     b2Vec2 ret = new b2Vec2(Box2DPINVOKE.b2Abs__SWIG_1(b2Vec2.getCPtr(a)), true);
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
     return ret;
   }
 
   public static b2Mat22 b2Abs(b2Mat22 A) {
     b2Mat22 ret = new b2Mat22(Box2DPINVOKE.b2Abs__SWIG_2(b2Mat22.getCPtr(A)), true);
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
     return ret;
   }
 
   public static b2Vec2 b2Min(b2Vec2 a, b2Vec2 b) {
     b2Vec2 ret = new b2Vec2(Box2DPINVOKE.b2Min(b2Vec2.getCPtr(a), b2Vec2.getCPtr(b)), true);
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
     return ret;
   }
 
   public static b2Vec2 b2Max(b2Vec2 a, b2Vec2 b) {
     b2Vec2 ret = new b2Vec2(Box2DPINVOKE.b2Max(b2Vec2.getCPtr(a), b2Vec2.getCPtr(b)), true);
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
     return ret;
   }
 
   public static b2Vec2 b2Clamp(b2Vec2 a, b2Vec2 low, b2Vec2 high) {
     b2Vec2 ret = new b2Vec2(Box2DPINVOKE.b2Clamp(b2Vec2.getCPtr(a), b2Vec2.getCPtr(low), b2Vec2.getCPtr(high)), true);
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
     return ret;
   }
 
@@ -268,50 +268,50 @@ public class Box2D {
 
   public static void b2CollideCircles(b2Manifold manifold, b2CircleShape circleA, b2Transform xfA, b2CircleShape circleB, b2Transform xfB) {
     Box2DPINVOKE.b2CollideCircles(b2Manifold.getCPtr(manifold), b2CircleShape.getCPtr(circleA), b2Transform.getCPtr(xfA), b2CircleShape.getCPtr(circleB), b2Transform.getCPtr(xfB));
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
   }
 
   public static void b2CollidePolygonAndCircle(b2Manifold manifold, b2PolygonShape polygonA, b2Transform xfA, b2CircleShape circleB, b2Transform xfB) {
     Box2DPINVOKE.b2CollidePolygonAndCircle(b2Manifold.getCPtr(manifold), b2PolygonShape.getCPtr(polygonA), b2Transform.getCPtr(xfA), b2CircleShape.getCPtr(circleB), b2Transform.getCPtr(xfB));
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
   }
 
   public static void b2CollidePolygons(b2Manifold manifold, b2PolygonShape polygonA, b2Transform xfA, b2PolygonShape polygonB, b2Transform xfB) {
     Box2DPINVOKE.b2CollidePolygons(b2Manifold.getCPtr(manifold), b2PolygonShape.getCPtr(polygonA), b2Transform.getCPtr(xfA), b2PolygonShape.getCPtr(polygonB), b2Transform.getCPtr(xfB));
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
   }
 
   public static void b2CollideEdgeAndCircle(b2Manifold manifold, b2EdgeShape polygonA, b2Transform xfA, b2CircleShape circleB, b2Transform xfB) {
     Box2DPINVOKE.b2CollideEdgeAndCircle(b2Manifold.getCPtr(manifold), b2EdgeShape.getCPtr(polygonA), b2Transform.getCPtr(xfA), b2CircleShape.getCPtr(circleB), b2Transform.getCPtr(xfB));
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
   }
 
   public static void b2CollideEdgeAndPolygon(b2Manifold manifold, b2EdgeShape edgeA, b2Transform xfA, b2PolygonShape circleB, b2Transform xfB) {
     Box2DPINVOKE.b2CollideEdgeAndPolygon(b2Manifold.getCPtr(manifold), b2EdgeShape.getCPtr(edgeA), b2Transform.getCPtr(xfA), b2PolygonShape.getCPtr(circleB), b2Transform.getCPtr(xfB));
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
   }
 
   public static int b2ClipSegmentToLine(b2ClipVertex vOut, b2ClipVertex vIn, b2Vec2 normal, float offset, int vertexIndexA) {
     int ret = Box2DPINVOKE.b2ClipSegmentToLine(b2ClipVertex.getCPtr(vOut), b2ClipVertex.getCPtr(vIn), b2Vec2.getCPtr(normal), offset, vertexIndexA);
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
     return ret;
   }
 
   public static bool b2TestOverlap(b2Shape shapeA, int indexA, b2Shape shapeB, int indexB, b2Transform xfA, b2Transform xfB) {
     bool ret = Box2DPINVOKE.b2TestOverlap__SWIG_0(b2Shape.getCPtr(shapeA), indexA, b2Shape.getCPtr(shapeB), indexB, b2Transform.getCPtr(xfA), b2Transform.getCPtr(xfB));
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
     return ret;
   }
 
   public static bool b2TestOverlap(b2AABB a, b2AABB b) {
     bool ret = Box2DPINVOKE.b2TestOverlap__SWIG_1(b2AABB.getCPtr(a), b2AABB.getCPtr(b));
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
     return ret;
   }
 
   public static bool b2PairLessThan(b2Pair pair1, b2Pair pair2) {
     bool ret = Box2DPINVOKE.b2PairLessThan(b2Pair.getCPtr(pair1), b2Pair.getCPtr(pair2));
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
     return ret;
   }
 

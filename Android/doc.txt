@@ -1,1 +1,0 @@
-http://forums.ouya.tv/discussion/2381/compiling-box2d-physics-tutorial

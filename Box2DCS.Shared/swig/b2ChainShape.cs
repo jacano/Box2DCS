@@ -53,12 +53,12 @@ public class b2ChainShape : b2Shape {
 
   public void SetPrevVertex(b2Vec2 prevVertex) {
     Box2DPINVOKE.b2ChainShape_SetPrevVertex(swigCPtr, b2Vec2.getCPtr(prevVertex));
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
   }
 
   public void SetNextVertex(b2Vec2 nextVertex) {
     Box2DPINVOKE.b2ChainShape_SetNextVertex(swigCPtr, b2Vec2.getCPtr(nextVertex));
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
   }
 
   public override b2Shape Clone(b2BlockAllocator allocator) {
@@ -78,19 +78,19 @@ public class b2ChainShape : b2Shape {
 
   public override bool TestPoint(b2Transform transform, b2Vec2 p) {
     bool ret = Box2DPINVOKE.b2ChainShape_TestPoint(swigCPtr, b2Transform.getCPtr(transform), b2Vec2.getCPtr(p));
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
     return ret;
   }
 
   public override bool RayCast(b2RayCastOutput output, b2RayCastInput input, b2Transform transform, int childIndex) {
     bool ret = Box2DPINVOKE.b2ChainShape_RayCast(swigCPtr, b2RayCastOutput.getCPtr(output), b2RayCastInput.getCPtr(input), b2Transform.getCPtr(transform), childIndex);
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
     return ret;
   }
 
   public override void ComputeAABB(b2AABB aabb, b2Transform transform, int childIndex) {
     Box2DPINVOKE.b2ChainShape_ComputeAABB(swigCPtr, b2AABB.getCPtr(aabb), b2Transform.getCPtr(transform), childIndex);
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
   }
 
   public override void ComputeMass(b2MassData massData, float density) {

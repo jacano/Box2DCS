@@ -45,7 +45,7 @@ public class b2Mat33 : IDisposable {
   }
 
   public b2Mat33(b2Vec3 c1, b2Vec3 c2, b2Vec3 c3) : this(Box2DPINVOKE.new_b2Mat33__SWIG_1(b2Vec3.getCPtr(c1), b2Vec3.getCPtr(c2), b2Vec3.getCPtr(c3)), true) {
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
   }
 
   public void SetZero() {
@@ -54,13 +54,13 @@ public class b2Mat33 : IDisposable {
 
   public b2Vec3 Solve33(b2Vec3 b) {
     b2Vec3 ret = new b2Vec3(Box2DPINVOKE.b2Mat33_Solve33(swigCPtr, b2Vec3.getCPtr(b)), true);
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
     return ret;
   }
 
   public b2Vec2 Solve22(b2Vec2 b) {
     b2Vec2 ret = new b2Vec2(Box2DPINVOKE.b2Mat33_Solve22(swigCPtr, b2Vec2.getCPtr(b)), true);
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
     return ret;
   }
 

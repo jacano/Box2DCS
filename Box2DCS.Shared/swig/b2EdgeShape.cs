@@ -45,7 +45,7 @@ public class b2EdgeShape : b2Shape {
 
   public void Set(b2Vec2 v1, b2Vec2 v2) {
     Box2DPINVOKE.b2EdgeShape_Set(swigCPtr, b2Vec2.getCPtr(v1), b2Vec2.getCPtr(v2));
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
   }
 
   public override b2Shape Clone(b2BlockAllocator allocator) {
@@ -61,19 +61,19 @@ public class b2EdgeShape : b2Shape {
 
   public override bool TestPoint(b2Transform transform, b2Vec2 p) {
     bool ret = Box2DPINVOKE.b2EdgeShape_TestPoint(swigCPtr, b2Transform.getCPtr(transform), b2Vec2.getCPtr(p));
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
     return ret;
   }
 
   public override bool RayCast(b2RayCastOutput output, b2RayCastInput input, b2Transform transform, int childIndex) {
     bool ret = Box2DPINVOKE.b2EdgeShape_RayCast(swigCPtr, b2RayCastOutput.getCPtr(output), b2RayCastInput.getCPtr(input), b2Transform.getCPtr(transform), childIndex);
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
     return ret;
   }
 
   public override void ComputeAABB(b2AABB aabb, b2Transform transform, int childIndex) {
     Box2DPINVOKE.b2EdgeShape_ComputeAABB(swigCPtr, b2AABB.getCPtr(aabb), b2Transform.getCPtr(transform), childIndex);
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
   }
 
   public override void ComputeMass(b2MassData massData, float density) {

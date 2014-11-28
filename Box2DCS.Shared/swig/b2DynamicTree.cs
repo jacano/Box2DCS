@@ -46,7 +46,7 @@ public class b2DynamicTree : IDisposable {
 
   public int CreateProxy(b2AABB aabb, SWIGTYPE_p_void userData) {
     int ret = Box2DPINVOKE.b2DynamicTree_CreateProxy(swigCPtr, b2AABB.getCPtr(aabb), SWIGTYPE_p_void.getCPtr(userData));
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
     return ret;
   }
 
@@ -56,7 +56,7 @@ public class b2DynamicTree : IDisposable {
 
   public bool MoveProxy(int proxyId, b2AABB aabb1, b2Vec2 displacement) {
     bool ret = Box2DPINVOKE.b2DynamicTree_MoveProxy(swigCPtr, proxyId, b2AABB.getCPtr(aabb1), b2Vec2.getCPtr(displacement));
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
     return ret;
   }
 

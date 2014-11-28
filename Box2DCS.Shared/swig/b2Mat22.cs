@@ -45,7 +45,7 @@ public class b2Mat22 : IDisposable {
   }
 
   public b2Mat22(b2Vec2 c1, b2Vec2 c2) : this(Box2DPINVOKE.new_b2Mat22__SWIG_1(b2Vec2.getCPtr(c1), b2Vec2.getCPtr(c2)), true) {
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
   }
 
   public b2Mat22(float a11, float a12, float a21, float a22) : this(Box2DPINVOKE.new_b2Mat22__SWIG_2(a11, a12, a21, a22), true) {
@@ -53,7 +53,7 @@ public class b2Mat22 : IDisposable {
 
   public void Set(b2Vec2 c1, b2Vec2 c2) {
     Box2DPINVOKE.b2Mat22_Set(swigCPtr, b2Vec2.getCPtr(c1), b2Vec2.getCPtr(c2));
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
   }
 
   public void SetIdentity() {
@@ -71,7 +71,7 @@ public class b2Mat22 : IDisposable {
 
   public b2Vec2 Solve(b2Vec2 b) {
     b2Vec2 ret = new b2Vec2(Box2DPINVOKE.b2Mat22_Solve(swigCPtr, b2Vec2.getCPtr(b)), true);
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
     return ret;
   }
 

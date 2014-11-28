@@ -63,23 +63,23 @@ public class b2AABB : IDisposable {
 
   public void Combine(b2AABB aabb) {
     Box2DPINVOKE.b2AABB_Combine__SWIG_0(swigCPtr, b2AABB.getCPtr(aabb));
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    ////if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
   }
 
   public void Combine(b2AABB aabb1, b2AABB aabb2) {
     Box2DPINVOKE.b2AABB_Combine__SWIG_1(swigCPtr, b2AABB.getCPtr(aabb1), b2AABB.getCPtr(aabb2));
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    ////if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
   }
 
   public bool Contains(b2AABB aabb) {
     bool ret = Box2DPINVOKE.b2AABB_Contains(swigCPtr, b2AABB.getCPtr(aabb));
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    ////if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
   public bool RayCast(b2RayCastOutput output, b2RayCastInput input) {
     bool ret = Box2DPINVOKE.b2AABB_RayCast(swigCPtr, b2RayCastOutput.getCPtr(output), b2RayCastInput.getCPtr(input));
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    ////if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 

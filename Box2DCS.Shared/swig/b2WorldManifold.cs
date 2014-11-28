@@ -43,7 +43,7 @@ public class b2WorldManifold : IDisposable {
 
   public void Initialize(b2Manifold manifold, b2Transform xfA, float radiusA, b2Transform xfB, float radiusB) {
     Box2DPINVOKE.b2WorldManifold_Initialize(swigCPtr, b2Manifold.getCPtr(manifold), b2Transform.getCPtr(xfA), radiusA, b2Transform.getCPtr(xfB), radiusB);
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
   }
 
   public b2Vec2 normal {

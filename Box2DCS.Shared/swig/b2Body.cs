@@ -55,7 +55,7 @@ public class b2Body : IDisposable {
 
   public void SetTransform(b2Vec2 position, float angle) {
     Box2DPINVOKE.b2Body_SetTransform(swigCPtr, b2Vec2.getCPtr(position), angle);
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
   }
 
   public b2Transform GetTransform() {
@@ -85,7 +85,7 @@ public class b2Body : IDisposable {
 
   public void SetLinearVelocity(b2Vec2 v) {
     Box2DPINVOKE.b2Body_SetLinearVelocity(swigCPtr, b2Vec2.getCPtr(v));
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
   }
 
   public b2Vec2 GetLinearVelocity() {
@@ -104,12 +104,12 @@ public class b2Body : IDisposable {
 
   public void ApplyForce(b2Vec2 force, b2Vec2 point) {
     Box2DPINVOKE.b2Body_ApplyForce(swigCPtr, b2Vec2.getCPtr(force), b2Vec2.getCPtr(point));
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
   }
 
   public void ApplyForceToCenter(b2Vec2 force) {
     Box2DPINVOKE.b2Body_ApplyForceToCenter(swigCPtr, b2Vec2.getCPtr(force));
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
   }
 
   public void ApplyTorque(float torque) {
@@ -118,7 +118,7 @@ public class b2Body : IDisposable {
 
   public void ApplyLinearImpulse(b2Vec2 impulse, b2Vec2 point) {
     Box2DPINVOKE.b2Body_ApplyLinearImpulse(swigCPtr, b2Vec2.getCPtr(impulse), b2Vec2.getCPtr(point));
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
   }
 
   public void ApplyAngularImpulse(float impulse) {
@@ -149,37 +149,37 @@ public class b2Body : IDisposable {
 
   public b2Vec2 GetWorldPoint(b2Vec2 localPoint) {
     b2Vec2 ret = new b2Vec2(Box2DPINVOKE.b2Body_GetWorldPoint(swigCPtr, b2Vec2.getCPtr(localPoint)), true);
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
     return ret;
   }
 
   public b2Vec2 GetWorldVector(b2Vec2 localVector) {
     b2Vec2 ret = new b2Vec2(Box2DPINVOKE.b2Body_GetWorldVector(swigCPtr, b2Vec2.getCPtr(localVector)), true);
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
     return ret;
   }
 
   public b2Vec2 GetLocalPoint(b2Vec2 worldPoint) {
     b2Vec2 ret = new b2Vec2(Box2DPINVOKE.b2Body_GetLocalPoint(swigCPtr, b2Vec2.getCPtr(worldPoint)), true);
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
     return ret;
   }
 
   public b2Vec2 GetLocalVector(b2Vec2 worldVector) {
     b2Vec2 ret = new b2Vec2(Box2DPINVOKE.b2Body_GetLocalVector(swigCPtr, b2Vec2.getCPtr(worldVector)), true);
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
     return ret;
   }
 
   public b2Vec2 GetLinearVelocityFromWorldPoint(b2Vec2 worldPoint) {
     b2Vec2 ret = new b2Vec2(Box2DPINVOKE.b2Body_GetLinearVelocityFromWorldPoint(swigCPtr, b2Vec2.getCPtr(worldPoint)), true);
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
     return ret;
   }
 
   public b2Vec2 GetLinearVelocityFromLocalPoint(b2Vec2 localPoint) {
     b2Vec2 ret = new b2Vec2(Box2DPINVOKE.b2Body_GetLinearVelocityFromLocalPoint(swigCPtr, b2Vec2.getCPtr(localPoint)), true);
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
     return ret;
   }
 

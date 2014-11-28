@@ -62,7 +62,7 @@ public class b2MouseJoint : b2Joint {
 
   public void SetTarget(b2Vec2 target) {
     Box2DPINVOKE.b2MouseJoint_SetTarget(swigCPtr, b2Vec2.getCPtr(target));
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
   }
 
   public b2Vec2 GetTarget() {

@@ -42,7 +42,7 @@ public class b2World : IDisposable {
   }
 
   public b2World(b2Vec2 gravity) : this(Box2DPINVOKE.new_b2World(b2Vec2.getCPtr(gravity)), true) {
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
   }
 
   public void SetDestructionListener(b2DestructionListener listener) {
@@ -95,12 +95,12 @@ public class b2World : IDisposable {
 
   public void QueryAABB(b2QueryCallback callback, b2AABB aabb) {
     Box2DPINVOKE.b2World_QueryAABB(swigCPtr, b2QueryCallback.getCPtr(callback), b2AABB.getCPtr(aabb));
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
   }
 
   public void RayCast(b2RayCastCallback callback, b2Vec2 point1, b2Vec2 point2) {
     Box2DPINVOKE.b2World_RayCast(swigCPtr, b2RayCastCallback.getCPtr(callback), b2Vec2.getCPtr(point1), b2Vec2.getCPtr(point2));
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
   }
 
   public b2Body GetBodyList() {
@@ -194,7 +194,7 @@ public class b2World : IDisposable {
 
   public void SetGravity(b2Vec2 gravity) {
     Box2DPINVOKE.b2World_SetGravity(swigCPtr, b2Vec2.getCPtr(gravity));
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
   }
 
   public b2Vec2 GetGravity() {

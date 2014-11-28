@@ -45,7 +45,7 @@ public class b2RevoluteJointDef : b2JointDef {
 
   public void Initialize(b2Body bodyA, b2Body bodyB, b2Vec2 anchor) {
     Box2DPINVOKE.b2RevoluteJointDef_Initialize(swigCPtr, b2Body.getCPtr(bodyA), b2Body.getCPtr(bodyB), b2Vec2.getCPtr(anchor));
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
   }
 
   public b2Vec2 localAnchorA {

@@ -117,7 +117,7 @@ public class b2Contact : IDisposable {
 
   public virtual void Evaluate(b2Manifold manifold, b2Transform xfA, b2Transform xfB) {
     Box2DPINVOKE.b2Contact_Evaluate(swigCPtr, b2Manifold.getCPtr(manifold), b2Transform.getCPtr(xfA), b2Transform.getCPtr(xfB));
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
   }
 
 }

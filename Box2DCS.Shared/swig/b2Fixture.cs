@@ -63,7 +63,7 @@ public class b2Fixture : IDisposable {
 
   public void SetFilterData(b2Filter filter) {
     Box2DPINVOKE.b2Fixture_SetFilterData(swigCPtr, b2Filter.getCPtr(filter));
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
   }
 
   public b2Filter GetFilterData() {
@@ -99,13 +99,13 @@ public class b2Fixture : IDisposable {
 
   public bool TestPoint(b2Vec2 p) {
     bool ret = Box2DPINVOKE.b2Fixture_TestPoint(swigCPtr, b2Vec2.getCPtr(p));
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
     return ret;
   }
 
   public bool RayCast(b2RayCastOutput output, b2RayCastInput input, int childIndex) {
     bool ret = Box2DPINVOKE.b2Fixture_RayCast(swigCPtr, b2RayCastOutput.getCPtr(output), b2RayCastInput.getCPtr(input), childIndex);
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
     return ret;
   }
 

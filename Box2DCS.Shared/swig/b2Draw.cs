@@ -60,32 +60,32 @@ public class b2Draw : IDisposable {
 
   public virtual void DrawPolygon(b2Vec2 vertices, int vertexCount, b2Color color) {
     Box2DPINVOKE.b2Draw_DrawPolygon(swigCPtr, b2Vec2.getCPtr(vertices), vertexCount, b2Color.getCPtr(color));
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
   }
 
   public virtual void DrawSolidPolygon(b2Vec2 vertices, int vertexCount, b2Color color) {
     Box2DPINVOKE.b2Draw_DrawSolidPolygon(swigCPtr, b2Vec2.getCPtr(vertices), vertexCount, b2Color.getCPtr(color));
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
   }
 
   public virtual void DrawCircle(b2Vec2 center, float radius, b2Color color) {
     Box2DPINVOKE.b2Draw_DrawCircle(swigCPtr, b2Vec2.getCPtr(center), radius, b2Color.getCPtr(color));
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
   }
 
   public virtual void DrawSolidCircle(b2Vec2 center, float radius, b2Vec2 axis, b2Color color) {
     Box2DPINVOKE.b2Draw_DrawSolidCircle(swigCPtr, b2Vec2.getCPtr(center), radius, b2Vec2.getCPtr(axis), b2Color.getCPtr(color));
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
   }
 
   public virtual void DrawSegment(b2Vec2 p1, b2Vec2 p2, b2Color color) {
     Box2DPINVOKE.b2Draw_DrawSegment(swigCPtr, b2Vec2.getCPtr(p1), b2Vec2.getCPtr(p2), b2Color.getCPtr(color));
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
   }
 
   public virtual void DrawTransform(b2Transform xf) {
     Box2DPINVOKE.b2Draw_DrawTransform(swigCPtr, b2Transform.getCPtr(xf));
-    if (Box2DPINVOKE.SWIGPendingException.Pending) throw Box2DPINVOKE.SWIGPendingException.Retrieve();
+    
   }
 
   public static readonly int e_shapeBit = Box2DPINVOKE.b2Draw_e_shapeBit_get();
