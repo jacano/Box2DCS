@@ -1,0 +1,2 @@
+D:\dev\Box2DCS\SWIG\src>swig -csharp -includeall -ignoremissing -namespace Box2D
+ -dllimport __Internal -outdir ../out -c++ Box2D.i
